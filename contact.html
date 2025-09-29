@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact</title>
+</head>
+<body>
+
+<!--------------------------- NAVIGATION PRINCIPALE --------------------------------------------->
+    
+    <nav>
+        <div>
+            <a href="index.html" class="lien">Accueil</a>
+            <a href="nosArtistes.html" class="lien">Nos artistes</a>
+            <a href="catalogue_de_musique.html" class="lien">Catalogue de musique</a>
+            <a href="tournees.html" class="lien">Tournées</a>
+            <a href="contact.html" class="lien">Nous contacter</a>
+        </div>
+    </nav>
+
+<!------------------------------ BANNIÈRE (EN-TÊTE) ---------------------------------------------->
+
+    <header class="banner"> <!-- En-tête avec la classe banner -->
+        <div class="container"> <!-- Conteneur pour centrer le contenu avec la classe container -->
+            <h1>Contactez-nous</h1>
+        </div>
+    </header>
+
+<!------------------------------- CONTENU PRINCIPAL (FORMULAIRE) ---------------------------------------------->
+
+    <main class="main"> <!-- Contenu principal de la page contact avec la classe main -->
+        <div class="container"> <!-- Conteneur pour centrer le contenu avec la classe container -->
+            <section class="contact-section"> <!-- Section de contact avec la classe contact-section -->
+                <h2>Formulaire</h2>
+                <form class="contact-form" action="#" method="post"> <!-- Formulaire de contact avec la classe contact-form -->
+                    <div class="form-group"> <!-- Groupe de champs du formulaire avec la classe form-group -->
+                        <label for="nom">Nom</label> <!-- Étiquette pour le champ nom -->
+                        <input type="text" id="nom" name="nom" required> <!-- Champ de saisie pour le nom -->
+                    </div>
+                    <div class="form-group"> <!-- Groupe de champs du formulaire avec la classe form-group -->
+                        <label for="email">Email</label> <!-- Étiquette pour le champ email -->
+                        <input type="email" id="email" name="email" required> <!-- Champ de saisie pour l'email -->
+                    </div>
+                    <div class="form-group"> <!-- Groupe de champs du formulaire avec la classe form-group -->
+                        <label for="message">Message</label> <!-- Étiquette pour le champ message -->
+                        <textarea id="message" name="message" rows="6" required></textarea> <!-- Champ de saisie pour le message -->
+                    </div>
+                    <button type="submit" class="btn">Envoyer</button> <!-- Bouton de soumission du formulaire -->
+                </form>
+            </section>
+        </div>
+    </main>
+
+<!------------------------------------- PIED DE PAGE ----------------------------------------------->
+
+    <footer class="footer"> <!-- Pied de page avec la classe footer -->
+        <div class="contact-info"> <!-- Informations de contact avec la classe contact-info -->
+            <p><strong>Adresse :</strong> 6415 R. Sherbrooke E, Montréal, QC H1N 1C5</p>
+            <p><strong>Horaires :</strong> Ouvert du lundi au vendredi de 10h00 à 21h00</p>
+            <p><strong>Téléphone :</strong> <a href="tel:15142521318">(514) 252-1318</a></p>
+        </div>
+        <div class="container"> <!-- Conteneur pour centrer le contenu avec la classe container -->
+            <p>&copy; Agence des Artistes de Montréal. Tous droits réservés.</p> <!-- Texte de copyright -->
+        </div>
+    </footer>
+    
+</body>
+</html>

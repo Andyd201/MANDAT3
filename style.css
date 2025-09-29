@@ -1,16 +1,73 @@
-nav div {
-    display: flex;
-    justify-content: center;
-    gap: 20vmin;
-    background-color: blueviolet;
-    padding: 15px;
+/*=============================== PAGE INDEX/STYLE DE BASE DU SITE ==========================*/
+
+nav div { /* Navigation principale */
+    display: flex; /* Utilise Flexbox pour  */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 20vmin; /* Espace entre les éléments */
+    background-color: blueviolet; /* Couleur de fond */
+    padding: 15px; /* Espace intérieur */
 }
 
-.lien {
-    text-decoration: none;
-    color: black;
+.lien { /* Style des liens de navigation */
+    text-decoration: none; /* Supprime le soulignement */
+    color: black; /* Couleur du texte */
 }
 
-.lien:hover {
-    text-decoration: underline;
+.lien:hover { /* Style au survol des liens */
+    text-decoration: underline; /* Ajoute un soulignement */
 }
+
+.footer { /* Pied de page */
+    background-color: blueviolet; /* définit la couleur de fond du pied de page */
+    color: black; /* définit la couleur du texte du pied de page */
+    text-align: center; /* centre le texte du pied de page */
+    padding: 20px; /* ajoute un peu d'espace autour du texte */
+    margin-top: 40px; /* ajoute un espace au-dessus du pied de page */
+}
+
+.banner { /* En-tête */
+    background-color: white; /* définit la couleur de fond de l'en-tête */
+    color: black; /* définit la couleur du texte de l'en-tête */
+    text-align: center; /* centre le texte de l'en-tête */
+}
+
+/*=============================== PAGE TOURNÉES ======================================= */
+
+
+
+
+/*==================================== PAGE CONTACT =======================================*/
+
+.contact-section {
+  background-color: #fff; /* fond blanc pour le formulaire */
+  border: 1px solid #ddd; /* bordure grise claire */
+  border-radius: 8px; /* arrondit les coins */
+  padding: 15px; /* espace intérieur */
+  max-width: 700px; /* limite la largeur du formulaire */
+  margin: 0 auto; /* centre le bloc dans le container */
+}
+
+.contact-form {
+  display: grid; /* utilise une grille pour aligner les champs */
+  gap: 12px; /* espace vertical entre les champs */
+}
+
+.form-group {
+  display: grid; /* utilise une grille pour aligner le label et le champ */
+  gap: 6px; /* espace entre le label et le champ */
+}
+
+.form-group label {
+  font-weight: bold; /* rend le label en gras */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%; /* prend toute la largeur disponible */
+  padding: 10px; /* ajoute de l'espace à l'intérieur des champs */
+  border: 1px solid #ddd; /* bordure grise claire */
+  border-radius: 6px; /* arrondit les coins */
+  font: inherit;  /* garde la même police que le site */
+  background-color: #fff; /* fond blanc */
+}
+
