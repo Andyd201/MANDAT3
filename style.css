@@ -1,0 +1,16 @@
+nav div {
+    display: flex;
+    justify-content: center;
+    gap: 20vmin;
+    background-color: blueviolet;
+    padding: 15px;
+}
+
+.lien {
+    text-decoration: none;
+    color: black;
+}
+
+.lien:hover {
+    text-decoration: underline;
+}
