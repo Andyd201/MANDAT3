@@ -1,68 +1,97 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Font Awesome -->
     <link rel="stylesheet" href="style.css" />
     <title>Contact</title>
 </head>
 <body>
 
-<!--------------------------- NAVIGATION PRINCIPALE --------------------------------------------->
-    
-    <nav>
-        <div>
-            <a href="index.html" class="lien">Accueil</a>
-            <a href="nosArtistes.html" class="lien">Nos artistes</a>
-            <a href="catalogue_de_musique.html" class="lien">Catalogue de musique</a>
-            <a href="tournees.html" class="lien">Tournées</a>
-            <a href="contact.html" class="lien">Nous contacter</a>
+<!------------------------------------- NAVIGATION PRINCIPALE ----------------------------------------------->
+
+<!-- faite avec Bulma (Components-menu) -->
+    <nav class="navbar is-light is-flex is-justify-content-center" role="navigation" aria-label="main navigation"> <!-- pour centrer la navbar -->
+    <div class="navbar-menu is-active"> <!-- pour afficher le menu en permanence -->
+        <div class="navbar-start is-flex is-justify-content-center"> <!-- pour centrer les liens -->
+        <a href="index.html" class="navbar-item">Accueil</a> 
+        <a href="nosArtistes.html" class="navbar-item">Nos artistes</a>
+        <a href="catalogue_de_musique.html" class="navbar-item">Catalogue de musique</a>
+        <a href="tournees.html" class="navbar-item">Tournées</a>
+        <a href="contact.html" class="navbar-item is-active">Nous contacter</a>
         </div>
+    </div>
     </nav>
 
-<!------------------------------ BANNIÈRE (EN-TÊTE) ---------------------------------------------->
+<!--------------------------------------- BANNIÈRE (EN-TÊTE) ----------------------------------------------->
 
-    <header class="banner"> <!-- En-tête avec la classe banner -->
-        <div class="container"> <!-- Conteneur pour centrer le contenu avec la classe container -->
-            <h1>Contactez-nous</h1>
+<!-- faite avec Bulma (Layout-hero) -->
+    <section class="hero is-medium"> <!-- is-medium pour une taille moyenne -->
+        <div class="hero-body"> <!-- hero-body pour le contenu de la bannière -->
+            <div class="container has-text-centered"> <!-- has-text-centered pour centrer le texte -->
+                <h1 class="title">Contactez-nous</h1>
+            </div>
         </div>
-    </header>
+    </section>
 
-<!------------------------------- CONTENU PRINCIPAL (FORMULAIRE) ---------------------------------------------->
+<!-------------------------------------------- FORMULAIRE ----------------------------------------------->
 
-    <main class="main"> <!-- Contenu principal de la page contact avec la classe main -->
-        <div class="container"> <!-- Conteneur pour centrer le contenu avec la classe container -->
-            <section class="contact-section"> <!-- Section de contact avec la classe contact-section -->
-                <h2>Formulaire</h2>
-                <form class="contact-form" action="#" method="post"> <!-- Formulaire de contact avec la classe contact-form -->
-                    <div class="form-group"> <!-- Groupe de champs du formulaire avec la classe form-group -->
-                        <label for="nom">Nom</label> <!-- Étiquette pour le champ nom -->
-                        <input type="text" id="nom" name="nom" required> <!-- Champ de saisie pour le nom -->
-                    </div>
-                    <div class="form-group"> <!-- Groupe de champs du formulaire avec la classe form-group -->
-                        <label for="email">Email</label> <!-- Étiquette pour le champ email -->
-                        <input type="email" id="email" name="email" required> <!-- Champ de saisie pour l'email -->
-                    </div>
-                    <div class="form-group"> <!-- Groupe de champs du formulaire avec la classe form-group -->
-                        <label for="message">Message</label> <!-- Étiquette pour le champ message -->
-                        <textarea id="message" name="message" rows="6" required></textarea> <!-- Champ de saisie pour le message -->
-                    </div>
-                    <button type="submit" class="btn">Envoyer</button> <!-- Bouton de soumission du formulaire -->
-                </form>
-            </section>
-        </div>
+<!-- faite avec Bulma (form) -->
+    <main class="section">
+    <div class="container">
+        <section class="box"> <!-- box pour encadrer le formulaire -->
+        <h2 class="title is-4">Formulaire</h2> <!-- is-4 pour une taille de titre moyenne -->
+        <form class="contact-form" action="#" method="post"> <!-- action="#" pour ne pas envoyer les données -->
+            <div class="field"> <!-- field pour chaque champ du formulaire -->
+            <label class="label" for="nom">Nom</label> <!-- label pour le nom -->
+            <div class="control has-icons-left"> <!-- control pour le champ de saisie, has-icons-left pour l'icône à gauche -->
+                <input class="input" type="text" id="nom" name="nom" required> <!-- input pour le champ de saisie -->
+                <span class="icon is-small is-left"> <!-- icon pour l'icône, is-small pour une petite icône, is-left pour la position à gauche -->
+                <i class="fas fa-user"></i> <!-- icône utilisateur -->
+                </span>
+            </div>
+            </div>
+            <div class="field"> <!-- field pour chaque champ du formulaire -->
+            <label class="label" for="email">Email</label> <!-- label pour l'email -->
+            <div class="control has-icons-left"> <!-- control pour le champ de saisie, has-icons-left pour l'icône à gauche -->
+                <input class="input" type="email" id="email" name="email" required> <!-- input pour le champ de saisie -->
+                <span class="icon is-small is-left"> <!-- icon pour l'icône, is-small pour une petite icône, is-left pour la position à gauche -->
+                <i class="fas fa-envelope"></i> <!-- icône enveloppe -->
+                </span>
+            </div>
+            </div>
+            <div class="field"> <!-- field pour chaque champ du formulaire -->
+            <label class="label" for="message">Message</label> <!-- label pour le message -->
+            <div class="control"> <!-- control pour le champ de saisie -->
+                <textarea class="textarea" id="message" name="message" rows="6" required></textarea> <!-- textarea pour le champ de saisie -->
+            </div>
+            </div>
+            <div class="field is-grouped is-justify-content-center"> <!-- field pour chaque champ du formulaire, is-grouped pour grouper les boutons, is-justify-content-center pour centrer les boutons -->
+            <div class="control"> <!-- control pour le bouton -->
+                <button type="submit" class="button"> <!-- bouton pour soumettre le formulaire -->
+                <span class="icon"><i class="fas fa-paper-plane"></i></span> <!-- icône avion en papier -->
+                <span>Envoyer</span>
+                </button>
+            </div>
+            </div>
+        </form>
+        </section>
+    </div>
     </main>
 
-<!------------------------------------- PIED DE PAGE ----------------------------------------------->
+<!------------------------------------------- PIED DE PAGE ----------------------------------------------->
 
-    <footer class="footer"> <!-- Pied de page avec la classe footer -->
-        <div class="contact-info"> <!-- Informations de contact avec la classe contact-info -->
-            <p><strong>Adresse :</strong> 6415 R. Sherbrooke E, Montréal, QC H1N 1C5</p>
-            <p><strong>Horaires :</strong> Ouvert du lundi au vendredi de 10h00 à 21h00</p>
-            <p><strong>Téléphone :</strong> <a href="tel:15142521318">(514) 252-1318</a></p>
-        </div>
-        <div class="container"> <!-- Conteneur pour centrer le contenu avec la classe container -->
-            <p>&copy; Agence des Artistes de Montréal. Tous droits réservés.</p> <!-- Texte de copyright -->
-        </div>
+<!-- faite avec Bulma (Layout-footer) -->
+    <footer class="footer">
+    <div class="content has-text-centered"> <!-- has-text-centered pour centrer le texte -->
+        <p>
+        <strong>Adresse :</strong> 6415 R. Sherbrooke E, Montréal, QC H1N 1C5<br>
+        <strong>Horaires :</strong> Ouvert du lundi au vendredi de 10h00 à 21h00<br>
+        <strong>Téléphone :</strong> <a class="lien" href="tel:15142521318">(514) 252-1318</a> 
+        </p>
+        <p>&copy; Agence des Artistes de Montréal. Tous droits réservés.</p>
+    </div>
     </footer>
-    
+
 </body>
 </html>

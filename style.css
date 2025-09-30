@@ -38,36 +38,10 @@ nav div { /* Navigation principale */
 
 /*==================================== PAGE CONTACT =======================================*/
 
-.contact-section {
-  background-color: #fff; /* fond blanc pour le formulaire */
-  border: 1px solid #ddd; /* bordure grise claire */
-  border-radius: 8px; /* arrondit les coins */
-  padding: 15px; /* espace intérieur */
-  max-width: 700px; /* limite la largeur du formulaire */
-  margin: 0 auto; /* centre le bloc dans le container */
+.button { /* Style du bouton */
+    background-color: blueviolet; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    padding: 10px 20px; /* Espace intérieur */
+    cursor: pointer; /* Change le curseur au survol */
 }
-
-.contact-form {
-  display: grid; /* utilise une grille pour aligner les champs */
-  gap: 12px; /* espace vertical entre les champs */
-}
-
-.form-group {
-  display: grid; /* utilise une grille pour aligner le label et le champ */
-  gap: 6px; /* espace entre le label et le champ */
-}
-
-.form-group label {
-  font-weight: bold; /* rend le label en gras */
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%; /* prend toute la largeur disponible */
-  padding: 10px; /* ajoute de l'espace à l'intérieur des champs */
-  border: 1px solid #ddd; /* bordure grise claire */
-  border-radius: 6px; /* arrondit les coins */
-  font: inherit;  /* garde la même police que le site */
-  background-color: #fff; /* fond blanc */
-}
-
