@@ -1,6 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&display=swap');
+
+.bitcount-prop-double-ink-1 {
+  font-family: "Bitcount Prop Double Ink", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0,
+    "SZP1" 0,
+    "SZP2" 0,
+    "XPN1" 0,
+    "XPN2" 0,
+    "YPN1" 0,
+    "YPN2" 0;
+}
+
 /*=============================== PAGE INDEX/STYLE DE BASE DU SITE ==========================*/
 
-nav div { /* Navigation principale */
+.navBar{ /* Navigation principale */
     display: flex; /* Utilise Flexbox pour  */
     justify-content: center; /* Centre les éléments horizontalement */
     gap: 20vmin; /* Espace entre les éléments */
