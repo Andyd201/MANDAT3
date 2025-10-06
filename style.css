@@ -1,31 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&display=swap');
+/*=============================== IMPORTATION POLICE ==========================*/
 
-.bitcount-prop-double-ink-1 {
-  font-family: "Bitcount Prop Double Ink", system-ui;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.oswald-normal {
+  font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 800;
+  font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "CRSV" 0.5,
-    "ELSH" 0,
-    "ELXP" 0,
-    "SZP1" 0,
-    "SZP2" 0,
-    "XPN1" 0,
-    "XPN2" 0,
-    "YPN1" 0,
-    "YPN2" 0;
+}
+
+/*=============================== RÉINITIALISATION DES STYLES ==========================*/
+
+body {
+    margin: 0; /* Supprime les marges par défaut */
 }
 
 /*=============================== PAGE INDEX/STYLE DE BASE DU SITE ==========================*/
 
-.navBar{ /* Navigation principale */
+.navBar { /* Navigation principale */
     display: flex; /* Utilise Flexbox pour  */
-    justify-content: center; /* Centre les éléments horizontalement */
-    gap: 20vmin; /* Espace entre les éléments */
-    background-color: blueviolet; /* Couleur de fond */
-    padding: 15px; /* Espace intérieur */
+    justify-content: right; /* Centre les éléments horizontalement */
+    gap: 7vmin; /* Espace entre les éléments */
+    background-color: #030213; /* Couleur de fond */
+    padding: 35px; /* Espace intérieur */
+}
+
+.navBar a { /* Style des liens de navigation */
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 1.2em; /* Taille de la police */
+}
+
+.navBar a:hover { /* Style au survol des liens */
+    text-decoration: underline; /* Ajoute un soulignement */
+    transform: translateY(-4px);
+    transition: transform 0.1s;
 }
 
 .lien { /* Style des liens de navigation */
