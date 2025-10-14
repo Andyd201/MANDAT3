@@ -3,36 +3,35 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> <!-- Bulma CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Font Awesome -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" /> <!-- Google Fonts (icône de musique) -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../Mission/style_mission.css" />
+    
     <title>Contact</title>
 </head>
 <body>
 
 <!------------------------------------- NAVIGATION PRINCIPALE ----------------------------------------------->
 
-<!-- faite avec Bulma (Components-menu) -->
-    <nav class="navbar is-light is-flex is-justify-content-center navBar" role="navigation" aria-label="main navigation"> <!-- pour centrer la navbar -->
-        <div class="navbar-menu is-active"> <!-- pour afficher le menu en permanence -->
-            <div class="navbar-start is-flex is-justify-content-center"> <!-- pour centrer les liens -->
-                <a href="index.html" class="navbar-item">Accueil</a> 
-                <a href="nosArtistes.html" class="navbar-item">Nos artistes</a>
-                <a href="catalogue_de_musique.html" class="navbar-item">Catalogue de musique</a>
-                <a href="tournees.html" class="navbar-item">Tournées</a>
-                <a href="contact.html" class="navbar-item is-active">Nous contacter</a>
-            </div>
+    <nav>
+        <div class="navBar oswald-normal" > <!-- Navigation principale -->
+            <span class="material-symbols-outlined icone">music_note</span> <!-- Icône de musique -->
+            <span class="agency_name">La Place Des Or</span> <!-- Nom de l'agence -->
+            <a href="../Accueil/index.html" class="lien">Accueil</a> 
+            <a href="../Mission/mission.html" class="lien">Catalogue de musique</a>
+            <a href="../Artistes/artisteMain.html" class="lien">Nos artistes</a>
+            <a href="../Tournees/tournee.html" class="lien">Tournées</a>
+            <a href="../Contact/contact.html" class="lien">Nous contacter</a>
         </div>
     </nav>
 
-<!--------------------------------------- BANNIÈRE (EN-TÊTE) ----------------------------------------------->
-
-<!-- faite avec Bulma (Layout-hero) -->
-    <section class="hero is-medium"> <!-- is-medium pour une taille moyenne -->
-        <div class="hero-body"> <!-- hero-body pour le contenu de la bannière -->
-            <div class="container has-text-centered"> <!-- has-text-centered pour centrer le texte -->
-                <h1 class="title">Contactez-nous</h1>
-            </div>
-        </div>
-    </section>
+<!--------------------------------------- HEADER (EN-TÊTE) ----------------------------------------------->
+    <header> <!-- faite avec Bulma (Layout-hero) et Google Fonts -->
+    <div class="container has-text-centered oswald-normal"> <!-- has-text-centered pour centrer le texte -->
+        <h1 class="title">Contactez-nous</h1>
+        <p class="subtitle">Une question, une demande de partenariat ou simplement envie d'échanger ? N'hésitez pas à nous contacter.</p>
+    </div>
+    </header>
 
 <!-------------------------------------------- FORMULAIRE ----------------------------------------------->
 
@@ -79,18 +78,49 @@
     </div>
     </main>
 
-<!------------------------------------------- PIED DE PAGE ----------------------------------------------->
+<!------------------------------------------- FOOTER (PIED DE PAGE) ----------------------------------------------->
 
-<!-- faite avec Bulma (Layout-footer) -->
-    <footer class="footer">
-    <div class="content has-text-centered"> <!-- has-text-centered pour centrer le texte -->
-        <p>
-        <strong>Adresse :</strong> 6415 R. Sherbrooke E, Montréal, QC H1N 1C5<br>
-        <strong>Horaires :</strong> Ouvert du lundi au vendredi de 10h00 à 21h00<br>
-        <strong>Téléphone :</strong> <a class="lien" href="tel:15142521318">(514) 252-1318</a> 
-        </p>
-        <p>&copy; Agence des Artistes de Montréal. Tous droits réservés.</p>
-    </div>
+<!-- fait avec Bulma -->
+    <footer>
+    <div class="footer oswald-normal">
+        <div class="columns "> <!-- columns pour créer des colonnes -->
+            <div class="column is-one-third has-text-left"> <!-- column pour chaque colonne, is-one-third pour une colonne qui prend un tiers de la largeur -->
+                <strong>La Place Des Or</strong>
+                <p class="mt-2">Plateforme dédiée aux artistes musicaux émergents et confirmés.</p> <!-- mt-2 pour une marge en haut -->
+            </div>
+            <div class="column has-text-left">
+                <strong>Navigation</strong>
+                <div class="mt-2"> <!-- mt-2 pour une marge en haut -->
+                    <a class="lien" href="../index.html">Accueil</a><br>
+                    <a class="lien" href="../Mission/mission.html">Catalogue de musique</a><br>
+                    <a class="lien" href="../Artistes/artistesMain.html">Nos artistes</a><br>
+                    <a class="lien" href="../Tournees/tournee.html">Tournées</a><br>
+                    <a class="lien" href="../Contact/contact.html">Nous contacter</a>
+                </div>
+            </div>
+            <div class="column has-text-left">
+                <strong>Suivez-nous</strong>
+                <!-- Liens vers les réseaux sociaux avec des icônes Font Awesome -->
+                <div class="mt-2"> <!-- mt-2 pour une marge en haut -->
+                    <a class="lien" href="https://facebook.com" target="_blank">
+                        <i class="fab fa-facebook fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                    </a>
+                    <a class="lien" href="https://instagram.com" target="_blank">
+                        <i class="fab fa-instagram fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                    </a>
+                    <a class="lien" href="https://twitter.com" target="_blank">
+                        <i class="fab fa-twitter fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                    </a>
+                    <a class="lien" href="https://youtube.com" target="_blank">
+                        <i class="fab fa-youtube fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4" style="border-top: 0.5px solid grey; margin-bottom: 0; height: 0;">
+        <div class="banner">
+            <p>&copy; 2025 La Place Des Or. Tous droits réservés.</p>
+        </div>
     </footer>
 
 </body>

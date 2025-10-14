@@ -1,0 +1,20 @@
+/*=========================== HEADER ======================================*/
+
+header { /* En-tête */
+    color: #030213; /* Couleur du texte */
+    text-align: center; /* Centre le texte */
+    padding: 20px; /* Espace intérieur */
+    margin-bottom: 20px; /* Espace en dessous de l'en-tête */
+    margin-top: 40px; /* Espace au-dessus de l'en-tête */
+}
+
+
+/*================================ BUTTON ====================================*/
+
+.button { /* Style du bouton */
+    background-color:#030213; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    padding: 10px 20px; /* Espace intérieur */
+    cursor: pointer; /* Change le curseur au survol */
+}
