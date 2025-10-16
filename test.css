@@ -1,0 +1,8 @@
+.wrapper * {
+    color: blue;
+    margin: 0 100px; /* Only for demo */
+}
+.myTestClass > * {
+    color:red;
+    margin: 0 20px;
+}

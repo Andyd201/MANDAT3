@@ -1,0 +1,26 @@
+.AccueilMain {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.65)), url("speaker.jpg");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    height: 484px;
+    text-align: center;
+    color: aliceblue;
+    justify-content: center;
+    margin: 0;
+    padding: 10em;
+    font-size: 1.8em;
+}
+
+
+
+.montserrat-accueil {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+
+

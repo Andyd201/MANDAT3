@@ -1,13 +1,22 @@
 /*=============================== IMPORTATION POLICE ==========================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.oswald-normal {
-  font-family: "Oswald", sans-serif;
+/* Font principal, prends des valeurs de font-weight entre 100 et 900 */
+.montserrat-1 {
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 100;
   font-style: normal;
 }
+
+.montserrat-nav-bar {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
 
 /*=============================== RÉINITIALISATION DES STYLES ==========================*/
 
@@ -20,6 +29,7 @@ body {
 .navBar { /* Navigation principale */
     display: flex; /* Utilise Flexbox pour  */
     justify-content: right; /* Centre les éléments horizontalement */
+    align-items: center; /*Aligne les items au centre Verticalement */
     gap: 7vmin; /* Espace entre les éléments */
     background-color: #030213; /* Couleur de fond */
     padding: 35px; /* Espace intérieur */
@@ -28,7 +38,7 @@ body {
 .navBar a { /* Style des liens de navigation */
     color: white; /* Couleur du texte */
     text-decoration: none; /* Supprime le soulignement */
-    font-size: 1.2em; /* Taille de la police */
+    font-size: 1.4em; /* Taille de la police */
 }
 
 .navBar a:hover { /* Style au survol des liens */
