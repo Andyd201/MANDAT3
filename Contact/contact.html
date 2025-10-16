@@ -3,61 +3,72 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> <!-- Bulma CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Font Awesome -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" /> <!-- Google Fonts (icône de musique) -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../Mission/style_mission.css" />
+    
     <title>La Place Des Or - Contact</title>
 </head>
 <body>
 
 <!------------------------------------- NAVIGATION PRINCIPALE ----------------------------------------------->
 
-<!-- faite avec Bulma (Components-menu) -->
-    <nav class="navbar is-light is-flex is-justify-content-center navBar" role="navigation" aria-label="main navigation"> <!-- pour centrer la navbar -->
-        <div class="navbar-menu is-active"> <!-- pour afficher le menu en permanence -->
-            <div class="navbar-start is-flex is-justify-content-center"> <!-- pour centrer les liens -->
-                <a href="../Accueil/index.html" class="navbar-item">Accueil</a> 
-                <a href="../Artistes/artisteMain.html" class="navbar-item">Nos artistes</a>
-                <a href="../Mission/mission.html" class="navbar-item">Notre Mission</a>
-                <a href="../Tournees/tournee.html" class="navbar-item">Tournées</a>
-                <a href="contact.html" class="navbar-item is-active">Nous contacter</a>
-            </div>
+    <nav>
+        <div class="navBar oswald-normal" > <!-- Navigation principale -->
+            <span class="material-symbols-outlined icone">music_note</span> <!-- Icône de musique -->
+            <span class="agency_name">La Place Des Or</span> <!-- Nom de l'agence -->
+            <a href="../Accueil/index.html" class="lien">Accueil</a> 
+            <a href="../Mission/mission.html" class="lien">Mission</a>
+            <a href="../Artistes/artisteMain.html" class="lien">Nos artistes</a>
+            <a href="../Tournees/tournee.html" class="lien">Tournées</a>
+            <a href="../Contact/contact.html" class="lien">Nous contacter</a>
         </div>
     </nav>
 
-<!--------------------------------------- BANNIÈRE (EN-TÊTE) ----------------------------------------------->
-
-<!-- faite avec Bulma (Layout-hero) -->
-    <section class="hero is-medium"> <!-- is-medium pour une taille moyenne -->
-        <div class="hero-body"> <!-- hero-body pour le contenu de la bannière -->
-            <div class="container has-text-centered"> <!-- has-text-centered pour centrer le texte -->
-                <h1 class="title">Contactez-nous</h1>
-            </div>
-        </div>
-    </section>
+<!--------------------------------------- HEADER (EN-TÊTE) ----------------------------------------------->
+    <header> <!-- faite avec Bulma (Layout-hero) et Google Fonts -->
+    <div class="container has-text-centered oswald-normal"> <!-- has-text-centered pour centrer le texte -->
+        <h1 class="title">Contactez-nous</h1>
+        <p class="subtitle">Une question, une demande de partenariat ou simplement envie d'échanger ? N'hésitez pas à nous contacter.</p>
+    </div>
+    </header>
 
 <!-------------------------------------------- FORMULAIRE ----------------------------------------------->
 
-<!-- faite avec Bulma (form) -->
-    <main class="section">
-    <div class="container">
+<!-- fait avec Bulma (form) -->
+    <main class="section columns oswald-normal"> <!-- section pour une section, is-two-thirds pour une largeur de deux tiers, is-centered pour centrer la section -->
+    <div class="container column is-two-thirds"> <!-- container pour centrer le contenu, is-two-thirds pour une largeur de deux tiers -->
         <section class="box"> <!-- box pour encadrer le formulaire -->
         <h2 class="title is-4">Formulaire</h2> <!-- is-4 pour une taille de titre moyenne -->
         <form class="contact-form" action="#" method="post"> <!-- action="#" pour ne pas envoyer les données -->
-            <div class="field"> <!-- field pour chaque champ du formulaire -->
-            <label class="label" for="nom">Nom</label> <!-- label pour le nom -->
-            <div class="control has-icons-left"> <!-- control pour le champ de saisie, has-icons-left pour l'icône à gauche -->
-                <input class="input" type="text" id="nom" name="nom" required> <!-- input pour le champ de saisie -->
-                <span class="icon is-small is-left"> <!-- icon pour l'icône, is-small pour une petite icône, is-left pour la position à gauche -->
-                <i class="fas fa-user"></i> <!-- icône utilisateur -->
-                </span>
+            <div class="columns"> <!-- columns pour créer des colonnes -->
+                <div class="column"> <!-- column pour chaque colonne -->
+                    <div class="field"> <!-- Champ pour le nom -->
+                        <label class="label" for="nom">Nom</label> <!-- label pour le nom -->
+                        <div class="control has-icons-left"> <!-- control pour le champ de saisie, has-icons-left pour ajouter une icône à gauche -->
+                            <input class="input" type="text" id="nom" name="nom" required> <!-- input pour le champ de saisie -->
+                            <span class="icon is-small is-left"> <!-- icon pour l'icône, is-small pour une petite icône, is-left pour une icône à gauche -->
+                                <i class="fas fa-user"></i> <!-- icône utilisateur -->
+                            </span> <!-- fin de l'icône -->
+                        </div>
+                    </div>
+                </div>
+                <div class="column"> <!-- column pour chaque colonne -->
+                    <div class="field"> <!-- Champ pour l'email -->
+                        <label class="label" for="email">Email</label> <!-- label pour l'email -->
+                        <div class="control has-icons-left"> <!-- control pour le champ de saisie, has-icons-left pour ajouter une icône à gauche -->
+                            <input class="input" type="email" id="email" name="email" required> <!-- input pour le champ de saisie -->
+                            <span class="icon is-small is-left"> <!-- icon pour l'icône, is-small pour une petite icône, is-left pour une icône à gauche -->
+                                <i class="fas fa-envelope"></i> <!-- icône enveloppe -->
+                            </span> <!-- fin de l'icône -->
+                        </div>
+                    </div>
+                </div>
             </div>
-            </div>
             <div class="field"> <!-- field pour chaque champ du formulaire -->
-            <label class="label" for="email">Email</label> <!-- label pour l'email -->
-            <div class="control has-icons-left"> <!-- control pour le champ de saisie, has-icons-left pour l'icône à gauche -->
-                <input class="input" type="email" id="email" name="email" required> <!-- input pour le champ de saisie -->
-                <span class="icon is-small is-left"> <!-- icon pour l'icône, is-small pour une petite icône, is-left pour la position à gauche -->
-                <i class="fas fa-envelope"></i> <!-- icône enveloppe -->
-                </span>
+            <label class="label" for="sujet">Sujet</label> <!-- label pour le sujet -->
+            <div class="control"> <!-- control pour le champ de saisie -->
+                <input class="input" type="text" id="sujet" name="sujet" required> <!-- input pour le champ de saisie -->
             </div>
             </div>
             <div class="field"> <!-- field pour chaque champ du formulaire -->
@@ -77,20 +88,88 @@
         </form>
         </section>
     </div>
-    </main>
+    <!---------------------------------------------- Encadré Informations --------------------------------------------->
 
-<!------------------------------------------- PIED DE PAGE ----------------------------------------------->
+    <div class="container column is-one-third"> <!-- container pour centrer le contenu, is-one-third pour une largeur d'un tiers -->
+        <section class="box"> <!-- box pour encadrer les informations -->
+            <h2 class="title is-4">Informations</h2> <!-- is-4 pour une taille de titre moyenne -->
+            <ul>
+                <li><span class="icon is-small is-left"> <!-- icône pour l'adresse -->
+                    <i class="fas fa-map-marker-alt"></i> <!-- icône de localisation -->
+                    </span>
+                    <strong>Adresse</strong> <br>6415 R. Sherbrooke E, Montréal, QC H1N 1C5</li> <!-- adresse -->
+                <li><span class="icon is-small is-left"> <!-- icône pour l'email -->
+                    <i class="fas fa-envelope"></i> <!-- icône enveloppe -->
+                    </span>
+                    <strong>Email</strong> <br>info@laplacedesor.com</li> <!-- email -->
+                <li><span class="icon is-small is-left"> <!-- icône pour le téléphone -->
+                    <i class="fas fa-phone"></i> <!-- icône téléphone -->
+                    </span>
+                    <strong>Téléphone</strong> <br> (514) 252-1318</li> <!-- téléphone -->
+            </ul>
+        </section>
+        <br>
+        <!---------------------------------------------- Encadré Horaires --------------------------------------------->
 
-<!-- faite avec Bulma (Layout-footer) -->
-    <footer class="footer">
-    <div class="content has-text-centered"> <!-- has-text-centered pour centrer le texte -->
-        <p>
-        <strong>Adresse :</strong> 6415 R. Sherbrooke E, Montréal, QC H1N 1C5<br>
-        <strong>Horaires :</strong> Ouvert du lundi au vendredi de 10h00 à 21h00<br>
-        <strong>Téléphone :</strong> <a class="lien" href="tel:15142521318">(514) 252-1318</a> 
-        </p>
-        <p>&copy; La Place Des Or. Tous droits réservés.</p>
+        <section class="box"> <!-- box pour encadrer les horaires -->
+            <h2 class="title is-4">Horaires</h2> <!-- is-4 pour une taille de titre moyenne -->
+            <ul>
+                <li>
+                    <span class="icon is-small is-left"> <!-- icône pour les horaires -->
+                        <i class="fas fa-clock"></i> <!-- icône horloge -->
+                    </span>
+                    <strong>Horaires</strong> <br>Lundi au Vendredi: 9h - 18h <br>Samedi: 10h - 16h <br>Dimanche: Fermé </li> <!-- horaires -->
+            </ul>
+        </section>
     </div>
+    </section>
+</div>
+</main>
+
+<!------------------------------------------- FOOTER (PIED DE PAGE) ----------------------------------------------->
+
+<!-- fait avec Bulma -->
+    <footer>
+    <div class="footer oswald-normal">
+        <div class="columns "> <!-- columns pour créer des colonnes -->
+            <div class="column is-one-third has-text-left"> <!-- column pour chaque colonne, is-one-third pour une colonne qui prend un tiers de la largeur -->
+                <strong>La Place Des Or</strong>
+                <p class="mt-2">Plateforme dédiée aux artistes musicaux émergents et confirmés.</p> <!-- mt-2 pour une marge en haut -->
+            </div>
+            <div class="column has-text-left">
+                <strong>Navigation</strong>
+                <div class="mt-2"> <!-- mt-2 pour une marge en haut -->
+                    <a class="lien" href="../Accueil/index.html">Accueil</a><br>
+                    <a class="lien" href="../Mission/mission.html">Mission</a><br>
+                    <a class="lien" href="../Artistes/artisteMain.html">Nos artistes</a><br>
+                    <a class="lien" href="../Tournees/tournee.html">Tournées</a><br>
+                    <a class="lien" href="../Contact/contact.html">Nous contacter</a>
+                </div>
+            </div>
+            <div class="column has-text-left">
+                <strong>Suivez-nous</strong>
+                <!-- Liens vers les réseaux sociaux avec des icônes Font Awesome -->
+                <div class="mt-2"> <!-- mt-2 pour une marge en haut -->
+                    <a class="lien" href="https://facebook.com" target="_blank">
+                        <i class="fab fa-facebook fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                    </a>
+                    <a class="lien" href="https://instagram.com" target="_blank">
+                        <i class="fab fa-instagram fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                    </a>
+                    <a class="lien" href="https://twitter.com" target="_blank">
+                        <i class="fab fa-twitter fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                    </a>
+                    <a class="lien" href="https://youtube.com" target="_blank">
+                        <i class="fab fa-youtube fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Ligne horizontale pour séparer le contenu du footer de la bannière-->
+        <hr class="my-4" style="border-top: 0.5px solid grey; margin-bottom: 0; height: 0;"> <!-- my-4 pour une marge verticale (fait avec Bulma) -->
+        <div class="banner">
+            <p>&copy; 2025 La Place Des Or. Tous droits réservés.</p>
+        </div>
     </footer>
 
 </body>

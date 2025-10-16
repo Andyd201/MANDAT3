@@ -24,7 +24,7 @@ body {
     margin: 0; /* Supprime les marges par défaut */
 }
 
-/*=============================== PAGE INDEX/STYLE DE BASE DU SITE ==========================*/
+/*=============================== BARRE NAVIGATION ==========================*/
 
 .navBar { /* Navigation principale */
     display: flex; /* Utilise Flexbox pour  */
@@ -47,6 +47,39 @@ body {
     transition: transform 0.1s;
 }
 
+/*=============================== ICÔNE MUSIQUE ET NOM DE L'AGENCE (BARRE DE NAVIGATION) ==========================*/
+
+/*** Le lien  de google Fonts n'a pas marché pour moi si je l'insère dans style.css (je l'ai mis dans contact.html) ***/
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=music_note');
+
+.material-symbols-outlined { /* Style de l'icône de musique */
+  font-variation-settings:
+  'FILL' 0, /* Remplit l'icône */
+  'wght' 400, /* Épaisseur de l'icône */
+  'GRAD' 0, /* Dégradé de l'icône */
+  'opsz' 20 /* Taille de l'icône */
+}
+
+.icone { /* Style additionnel pour l'icône de musique */
+    color: white; /* Couleur des icônes */
+    font-size: 3em; /* Taille des icônes */
+    justify-content: left; /* Aligne les icônes à gauche */
+    margin-right: auto; /* Pousse le texte vers la droite */
+    padding: 0px; /* Enlève le padding */
+    margin: -7px -20px -300px -300px; /* Ajuste la position de l'icône */
+}
+
+.agency_name { /* Style du nom de l'agence */
+    color: white; /* Couleur du texte */
+    justify-content: left; /* Aligne le texte à gauche */
+    font-size: 1.2em; /* Taille de la police */
+    margin-right: 400px; /* Espace à droite */
+    padding: 0px; /* Enlève le padding */
+   
+}
+
+/*================================= BOUTON ===============================*/
+
 .lien { /* Style des liens de navigation */
     text-decoration: none; /* Supprime le soulignement */
     color: black; /* Couleur du texte */
@@ -56,31 +89,44 @@ body {
     text-decoration: underline; /* Ajoute un soulignement */
 }
 
+
+/*========================== FOOTER ET BANNER =============================*/
+
+/* Pour le footer, ce serait mieux si vous copiez le code de footer dans contact.html car certaines propriétés sont faites avec Bulma */
+
 .footer { /* Pied de page */
-    background-color: blueviolet; /* définit la couleur de fond du pied de page */
-    color: black; /* définit la couleur du texte du pied de page */
+    background-color: #030213; /* définit la couleur de fond du pied de page */
+    color: white; /* définit la couleur du texte du pied de page */
     text-align: center; /* centre le texte du pied de page */
     padding: 20px; /* ajoute un peu d'espace autour du texte */
     margin-top: 40px; /* ajoute un espace au-dessus du pied de page */
+
+    
 }
 
-.banner { /* En-tête */
-    background-color: white; /* définit la couleur de fond de l'en-tête */
-    color: black; /* définit la couleur du texte de l'en-tête */
-    text-align: center; /* centre le texte de l'en-tête */
+.footer strong {
+    color: white; /* Met en évidence les titres en blanc */
 }
 
-/*=============================== PAGE TOURNÉES ======================================= */
-
-
-
-
-/*==================================== PAGE CONTACT =======================================*/
-
-.button { /* Style du bouton */
-    background-color: blueviolet; /* Couleur de fond */
-    color: white; /* Couleur du texte */
-    border: none; /* Supprime la bordure */
-    padding: 10px 20px; /* Espace intérieur */
-    cursor: pointer; /* Change le curseur au survol */
+.footer a {
+    color: white; /* Couleur des liens en blanc */
+    text-decoration: none; /* Supprime le soulignement */
 }
+
+
+
+.banner { /* Style de la bannière */
+    background-color: #030213; /* définit la couleur de fond */
+    color: grey; /* définit la couleur du texte */
+    text-align: center; /* centre le texte */
+    padding-bottom: 30px; /* ajoute un peu d'espace autour du texte */
+    margin-top: 50px; /* ajoute un espace au-dessus de la bannière */
+}
+
+
+
+
+
+
+
+
