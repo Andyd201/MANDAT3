@@ -4,11 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" /> <!-- Google Fonts (icône de musique) -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../Mission/style_mission.css" />
+    
     <title> La Place Des Or - Mission </title>
 </head>
 
 <body>
+
+    <!------------------------------------- NAVIGATION PRINCIPALE ----------------------------------------------->
+    
     <nav>
         <div class="navBar montserrat-nav-bar">
             <a href="../Accueil/index.html" class="lien">Accueil</a>
@@ -18,6 +26,100 @@
             <a href="../Contact/contact.html" class="lien">Nous contacter</a>
         </div>
     </nav>
+
+    <!--------------------------------------- HEADER (EN-TÊTE) ----------------------------------------------->
+    
+    <header>
+        <div class="container montserrat-1">
+            <h1 class="title">Notre Mission </h1><br><br>
+            <p class="description">La Place Des Or s'engage à promouvoir des artistes talentueux en leur offrant une plateforme pour se connecter avec un public plus large. Nous croyons en la puissance de la musique pour inspirer, unir et transformer des vies. Notre mission est de soutenir les artistes émergents et établis en leur fournissant les ressources, la visibilité et les opportunités nécessaires pour réussir dans l'industrie musicale.</p>
+        </div>
+    </header>
+
+    <!--------------------------------------- MAIN (CONTENU PRINCIPAL) ----------------------------------------------->
+
+    <main>
+        <div class="container montserrat-1">
+            <div class="section">
+                <div class="content">
+                    <h3 class="subtitle">Nos Valeurs</h3>
+                </div>
+                <div class="columns"> <!-- columns pour créer des colonnes (fait avec Bulma)-->
+                    <div class="column is-half"> <!-- column pour chaque colonne, is-half pour une colonne qui prend la moitié de la largeur -->
+                        <ul>
+                            <li>
+                                <strong>Passion et authenticité</strong><br>
+                                <p>Nous sommes passionnés par la musique et nous nous engageons à soutenir les artistes qui partagent cette passion.</p>
+                            </li>
+                            <li>
+                                <strong>Créativité sans limites</strong><br>
+                                <p>Nous cherchons constamment des moyens innovants pour promouvoir nos artistes et atteindre de nouveaux publics.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column is-half"> <!-- column pour chaque colonne, is-half pour une colonne qui prend la moitié de la largeur -->
+                        <ul>
+                            <li>
+                                <strong>Communauté et entraide</strong><br>
+                                <p>Nous croyons en la création d'une communauté forte où les artistes et les fans peuvent se connecter et s'inspirer mutuellement.</p>
+                            </li>
+                            <li>
+                                <strong>Accessibilité de la Culture</strong><br>
+                                <p>Nous nous engageons à rendre la musique accessible à tous, en mettant toujours en avant la diversité et l'inclusion.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--------------------------------------- FOOTER ----------------------------------------------->
+    
+    <!-- fait avec Bulma -->
+    <footer>
+    <div class="footer montserrat-1"> <!-- montserrat-1 pour la police de caractère -->
+        <div class="columns "> <!-- columns pour créer des colonnes -->
+            <div class="column is-one-third has-text-left"> <!-- column pour chaque colonne, is-one-third pour une colonne qui prend un tiers de la largeur -->
+                <strong>La Place Des Or</strong>
+                <p class="mt-2">Plateforme dédiée aux artistes musicaux émergents et confirmés.</p> <!-- mt-2 pour une marge en haut -->
+            </div>
+            <div class="column has-text-left"> <!-- column pour chaque colonne -->
+                <strong>Navigation</strong>
+                <div class="mt-2"> <!-- mt-2 pour une marge en haut -->
+                    <a class="lien" href="../Accueil/index.html">Accueil</a><br>
+                    <a class="lien" href="../Mission/mission.html">Mission</a><br>
+                    <a class="lien" href="../Artistes/artisteMain.html">Nos artistes</a><br>
+                    <a class="lien" href="../Tournees/tournee.html">Tournées</a><br>
+                    <a class="lien" href="../Contact/contact.html">Nous contacter</a>
+                </div>
+            </div>
+            <div class="column has-text-left">
+                <strong>Suivez-nous</strong>
+                <!-- Liens vers les réseaux sociaux avec des icônes Font Awesome -->
+                <div class="mt-2"> <!-- mt-2 pour une marge en haut -->
+                    <a class="lien" href="https://facebook.com" target="_blank">
+                        <i class="fab fa-facebook fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                    </a>
+                    <a class="lien" href="https://instagram.com" target="_blank">
+                        <i class="fab fa-instagram fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                    </a>
+                    <a class="lien" href="https://twitter.com" target="_blank">
+                        <i class="fab fa-twitter fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                    </a>
+                    <a class="lien" href="https://youtube.com" target="_blank">
+                        <i class="fab fa-youtube fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Ligne horizontale pour séparer le contenu du footer de la bannière-->
+        <hr class="my-4 montserrat-1" style="border-top: 0.5px solid grey; margin-bottom: 0; height: 0;"> <!-- my-4 pour une marge verticale (fait avec Bulma) -->
+        <div class="banner">
+            <p>&copy; 2025 La Place Des Or. Tous droits réservés.</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>

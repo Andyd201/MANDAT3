@@ -1,20 +1,36 @@
-/*=========================== HEADER ======================================*/
+/*======================= HEADER =======================*/
 
 header { /* En-tête */
-    color: #030213; /* Couleur du texte */
-    text-align: center; /* Centre le texte */
-    padding: 20px; /* Espace intérieur */
-    margin-bottom: 20px; /* Espace en dessous de l'en-tête */
-    margin-top: 40px; /* Espace au-dessus de l'en-tête */
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../Mission/mission2.jpg'); /* Image de fond avec assombrissement */
+    background-size: cover; /* Couvre toute la zone */
+    background-position: center; /* Centre l'image */
+    min-height: 80vmin; /* Hauteur minimale */
 }
 
-
-/*================================ BUTTON ====================================*/
-
-.button { /* Style du bouton */
-    background-color:#030213; /* Couleur de fond */
+.title { /* Titre principal */
     color: white; /* Couleur du texte */
-    border: none; /* Supprime la bordure */
-    padding: 10px 20px; /* Espace intérieur */
-    cursor: pointer; /* Change le curseur au survol */
+    text-align: left; /* Centre le texte */
+    padding: 80px 20px; /* Espace intérieur */
+}
+
+.description { /* Description sous le titre */
+    color: white; /* Couleur du texte */
+    font-size: 1.2em; /* Taille de la police */
+    line-height: 1.6; /* Hauteur de ligne */
+    margin-top: 0px; /* Espace au-dessus */
+}
+
+/*======================= MAIN CONTENT =======================*/
+
+main li { /* Style des éléments de liste */
+    margin-bottom: 30px; /* Espace entre les éléments de la liste */
+}
+
+main p { /* Style des paragraphes */
+    margin-top: 15px; /* Espace entre les paragraphes */
+}
+
+.content { /* Style du conteneur de contenu */
+    padding-bottom: 30px; /* Espace intérieur en bas */
+    border-bottom: 1px solid #eee; /* Bordure en bas */
 }
