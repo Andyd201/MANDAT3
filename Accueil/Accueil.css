@@ -12,15 +12,20 @@
     font-size: 1.8em;
 }
 
-
-
 .montserrat-accueil {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 800;
+    font-weight: 500;
     font-style: normal;
+    font-size: 1.5em;
 }
 
-
+.montserrat-accueil-titre {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.8em;
+}
 
 
