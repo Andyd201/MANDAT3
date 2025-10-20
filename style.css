@@ -64,16 +64,15 @@ body {
     color: white; /* Couleur des icônes */
     font-size: 3em; /* Taille des icônes */
     justify-content: left; /* Aligne les icônes à gauche */
-    margin-right: auto; /* Pousse le texte vers la droite */
     padding: 0px; /* Enlève le padding */
-    margin: -7px -20px -300px -300px; /* Ajuste la position de l'icône */
+    margin-right: 100px; /* Espace à droite de l'icône */
 }
 
 .agency_name { /* Style du nom de l'agence */
     color: white; /* Couleur du texte */
     justify-content: left; /* Aligne le texte à gauche */
     font-size: 1.2em; /* Taille de la police */
-    margin-right: 400px; /* Espace à droite */
+    margin-right: 150px; /* Espace à droite */
     padding: 0px; /* Enlève le padding */
    
 }
