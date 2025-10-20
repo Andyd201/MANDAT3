@@ -8,7 +8,8 @@
     color: aliceblue;
     justify-content: center;
     margin: 0;
-    padding: 10em;
+    padding-top: 30vmin;
+    padding-bottom: 60vmin;
     font-size: 1.8em;
 }
 
@@ -28,4 +29,22 @@
     font-size: 1.8em;
 }
 
+.btn{
+    display: flex;
+    justify-content: center;
+    gap: 2.5vmin;
+}
 
+.boutton {
+    padding: 8px 12px;
+    background-color: rgba(139, 98, 33, 0.85);
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.boutton:hover {
+    background-color: rgba(160, 118, 49, 0.85);
+}
