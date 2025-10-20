@@ -1,74 +1,79 @@
-.constructeur {
-    display: flex;
-    flex-direction: column; /* Aligne les enfants verticalement */
-    justify-content: flex-start; /* Aligne les enfants en haut */
-    text-align: left;
-    /* background-color: red; */
-    width: 50%; /* Occupe 50% de la largeur pour équilibrer avec l'image */
-    height: auto; /* Ajuste la hauteur automatiquement */
-    margin-top: 5rem;
-    margin-left: 3rem;
+.montserrat-header {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 3em;
+    color: #ffffff; /* texte blanc pour contraster */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
 
-.constructeur2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+.constructeur-header {
+    text-align: center;
+    font-family: 'Constructeur', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #030213;
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("spectacle.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 7em;
+    margin-bottom: 1em;
 }
 
-.titre {
-    margin-left: 3rem;
-    font-size: 2.5em;
-}
 
-
-.sous-titre {
-    margin-left: 3rem;
-    font-size: 1.5em;
-
-}
-
-.enfant1 {
-    /* background-color: blue; */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.enfant2 {
-    /* background-color: green; */
-    width: 50%;
+.date {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #030213;
+    background-color: #D3D3D3;
+    border: solid 0.5vmin #030213;
+    border-radius: 0.5vmin;
+    width: 90%;
+    height: 18vmin;
     display: flex;
     align-items: center;
-
-}
-
-.enfant3 {
-    /* background-color: purple; */
-    width: 50%;
-    display: flex;
-    align-items: center;
+    justify-content: flex-start; 
+    padding: 0; 
 }
 
 
-.liste_deroulante select {
-    width: 10rem; /* Augmente la largeur de la liste déroulante */
-    height: 3rem; /* Augmente la hauteur de la liste déroulante */
-    font-size: 1.2rem; /* Augmente la taille du texte */
-    padding: 0.5rem; /* Ajoute un espace intérieur pour un meilleur rendu */
-}
 
 img {
-    width: 35rem;
-    height: 28rem;
-    margin-right: 2rem;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-.main-content {
-    /* background-color: red; */
-    display: flex; /* Active Flexbox pour aligner les enfants et l'image */
-    justify-content: space-between; /* Espace entre les enfants et l'image */
-    align-items: flex-start; /* Aligne les enfants en haut du conteneur */
-    margin-top: 3rem;
-    padding-top: 1rem; /* Ajoute un peu d'espace en haut si nécessaire */
+
+.photo-artiste {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.photo-artiste img {
+    max-height: 100%;
+    width: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0; 
+}
+
+.constructeur-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 1em;
+}
+
+.nom-artiste {
+    margin: 0;
 }
