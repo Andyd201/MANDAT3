@@ -10,27 +10,27 @@ header { /* En-tête */
 .title { /* Titre principal */
     color: white; /* Couleur du texte */
     text-align: left; /* Centre le texte */
-    padding: 80px 20px; /* Espace intérieur */
+    padding: 8vmin 2vmin; /* Espace intérieur */
 }
 
 .description { /* Description sous le titre */
     color: white; /* Couleur du texte */
-    font-size: 1.2em; /* Taille de la police */
+    font-size: 3.7vmin; /* Taille de la police */
     line-height: 1.6; /* Hauteur de ligne */
-    margin-top: 0px; /* Espace au-dessus */
+    margin-top: 0vmin; /* Espace au-dessus */
 }
 
 /*======================= MAIN CONTENT =======================*/
 
 main li { /* Style des éléments de liste */
-    margin-bottom: 30px; /* Espace entre les éléments de la liste */
+    margin-bottom: 3vmin; /* Espace entre les éléments de la liste */
 }
 
 main p { /* Style des paragraphes */
-    margin-top: 15px; /* Espace entre les paragraphes */
+    margin-top: 1.5vmin; /* Espace entre les paragraphes */
 }
 
 .content { /* Style du conteneur de contenu */
-    padding-bottom: 30px; /* Espace intérieur en bas */
-    border-bottom: 1px solid #eee; /* Bordure en bas */
+    padding-bottom: 3vmin; /* Espace intérieur en bas */
+    border-bottom: 0.1vmin solid #eee; /* Bordure en bas */
 }

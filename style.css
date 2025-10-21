@@ -52,29 +52,36 @@ body {
 /*** Le lien  de google Fonts n'a pas marché pour moi si je l'insère dans style.css (je l'ai mis dans contact.html) ***/
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=music_note');
 
+/*** Pour que la note de musique et le nom d'agence fonctionnent il faut copier le nav de contact.html ***/
+
 .material-symbols-outlined { /* Style de l'icône de musique */
   font-variation-settings:
   'FILL' 0, /* Remplit l'icône */
-  'wght' 400, /* Épaisseur de l'icône */
+  'wght' 0, /* Épaisseur de l'icône */
   'GRAD' 0, /* Dégradé de l'icône */
-  'opsz' 20 /* Taille de l'icône */
+  'opsz' 0 /* Taille de l'icône */
 }
 
-.icone { /* Style additionnel pour l'icône de musique */
-    color: white; /* Couleur des icônes */
-    font-size: 3em; /* Taille des icônes */
-    justify-content: left; /* Aligne les icônes à gauche */
-    padding: 0px; /* Enlève le padding */
-    margin-right: 100px; /* Espace à droite de l'icône */
+.icone-agency-container { /* Conteneur pour l'icône et le nom de l'agence */
+  display: flex; /* flex pour aligner les éléments horizontalement */
+  align-items: center; /* Aligne les éléments verticalement au centre */
+  gap: 1vmin; /* Espace entre l'icône et le nom de l'agence */
+  justify-content: flex-start; /* Aligne les éléments à gauche */
+  margin-right: auto; /* pousse les liens à droite */
+}
+
+.icone { /* Style de l'icône de musique */
+  color: white; /* Couleur de l'icône */
+  font-size: 1.1em; /* Taille de l'icône */
+  line-height: 1; /* Hauteur de ligne */
+  font-style: italic; /* Style italique */
 }
 
 .agency_name { /* Style du nom de l'agence */
-    color: white; /* Couleur du texte */
-    justify-content: left; /* Aligne le texte à gauche */
-    font-size: 1.2em; /* Taille de la police */
-    margin-right: 150px; /* Espace à droite */
-    padding: 0px; /* Enlève le padding */
-   
+  color: white; /* Couleur du texte */
+  font-size: 1.1em; /* Taille de la police */
+  font-weight: 300; /* Épaisseur de la police */
+  letter-spacing: 0.2vmin; /* Espacement des lettres */
 }
 
 /*================================= BOUTON ===============================*/
@@ -94,32 +101,28 @@ body {
 /* Pour le footer, ce serait mieux si vous copiez le code de footer dans contact.html car certaines propriétés sont faites avec Bulma */
 
 .footer { /* Pied de page */
-    background-color: #030213; /* définit la couleur de fond du pied de page */
-    color: white; /* définit la couleur du texte du pied de page */
-    text-align: center; /* centre le texte du pied de page */
-    padding: 20px; /* ajoute un peu d'espace autour du texte */
-    margin-top: 40px; /* ajoute un espace au-dessus du pied de page */
-
-    
+    background-color: #030213; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Centre le texte */
+    padding: 3vmin; /* Espace intérieur */
+    margin-top: 6vmin; /* Espace au-dessus du pied de page */
 }
 
-.footer strong {
-    color: white; /* Met en évidence les titres en blanc */
+.footer strong { /* Style du texte en gras dans le pied de page */
+    color: white; /* Couleur du texte */
 }
 
 .footer a {
-    color: white; /* Couleur des liens en blanc */
+    color: white; /* Couleur du texte */
     text-decoration: none; /* Supprime le soulignement */
 }
 
-
-
 .banner { /* Style de la bannière */
-    background-color: #030213; /* définit la couleur de fond */
-    color: grey; /* définit la couleur du texte */
-    text-align: center; /* centre le texte */
-    padding-bottom: 30px; /* ajoute un peu d'espace autour du texte */
-    margin-top: 50px; /* ajoute un espace au-dessus de la bannière */
+    background-color: #030213; /* Couleur de fond */
+    color: grey; /* Couleur du texte */
+    text-align: center; /* Centre le texte */
+    padding-bottom: 4.5vmin; /* Espace intérieur */
+    margin-top: 7.5vmin; /* Espace au-dessus de la bannière */
 }
 
 
