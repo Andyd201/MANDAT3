@@ -48,3 +48,42 @@
 .boutton:hover {
     background-color: rgba(160, 118, 49, 0.85);
 }
+
+.infosAcceuil{
+    display: flex;
+    justify-content: center;
+    column-gap: 11em;
+    row-gap: 7em;
+    flex-wrap: wrap;
+    padding-top: 4em;
+}
+
+.cards {
+    background-color: none;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 30em;
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+    padding-right: 5em;
+    padding-left: 5em;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1em;
+}
+
+.liensInfoAccueil{
+    text-decoration: none;
+    color: black;
+}
+
+.liensInfoAccueil:hover{
+    color: rgba(141, 110, 63, 0.945);
+}
+
+.textCards{
+    margin-top: 1em;
+}
