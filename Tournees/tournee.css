@@ -6,6 +6,10 @@ body {
     background-repeat: no-repeat;
 }
 
+p {
+    font-size: 1em;
+}
+
 .montserrat-header {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -34,39 +38,14 @@ body {
     background-color: #D3D3D3;
     border: solid 0.5vmin #030213;
     border-radius: 0.5vmin;
-    width: 90%;
+    width: 80%;
     height: 18vmin;
     display: flex;
+    flex-direction: row;
     padding: 0; 
+    gap: 0;
 }
 
-
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-
-.photo-artiste {
-    width: 25%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; 
-    padding-left: 0;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.photo-artiste img {
-    max-height: 100%;
-    width: auto;
-    object-fit: cover;
-    display: block;
-    margin: 0; 
-}
 
 .constructeur-main {
     display: flex;
@@ -81,7 +60,18 @@ img {
     margin: 0;
 }
 
-.nom-artiste-nombre-billets {
-    display: flex;
-    justify-content: space-around;
+.image-artiste {
+    background-color: red;
+    width: 20%;
 }
+
+.nom-artiste-nombre-billets {
+    background-color: green;
+    width: 40%;
+}
+
+.bouton-réserver {
+    background-color: blue;
+    width: 40%;
+}
+
