@@ -22,28 +22,64 @@
 }
 
 .image {
-    display: flex;
+    width: 55%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    max-width: 100%;
 }
 
+
 .Sous-titre {
-    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.5em;
+    font-size: 1.8em;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    text-align: center;
     display: flex;
+    justify-content: center;
 }
 
- body {
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+
+ .genre-musique {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
+ }
+    
+ .artist-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    margin: 15px;
+    flex: 1 1 calc(33% - 30px);
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.discographie {
+    display: block;  /* Changé de inline-block à block */
+    width: 200px;    /* Largeur fixe */
+    margin: 10px auto; /* Centrer horizontalement avec auto */
+    padding: 10px 15px;
+    background-color: darkgray;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: heavy;
+    transition: background-color 0.3s;
+}
+
+/* Optionnel: Ajouter un effet hover */
+.discographie:hover {
+    background-color: #666;
 }
