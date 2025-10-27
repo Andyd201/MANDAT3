@@ -4,27 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> <!-- Bulma CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" /> <!-- Google Fonts (icône de musique) -->
     <title>La Place Des Or - Tournées</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" /> <!-- Google Fonts (icône de musique) -->
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="tournee.css">
 </head>
 
 <body>
-
+    <a href="#contenuPrincipal" class="skip-link"> Passer au contenu principal </a>
     <!------------------------------------- NAVIGATION PRINCIPALE ----------------------------------------------->
 
     <nav>
         <div class="montserrat-nav-bar navBar montserrat-1">
-            <a class="agency_name icone-agency-container lien-logo" href="../Accueil/index.html"> <!-- Conteneur pour l'icône et le nom de l'agence -->
+            <a class="agency_name icone-agency-container lien-logo" href="../Accueil/index.html">
+                <!-- Conteneur pour l'icône et le nom de l'agence -->
                 <i class="material-symbols-outlined icone">music_note</i> <!-- Icône de musique -->
                 La Place Des Or
             </a>
             <a href="../Accueil/index.html" class="lien">Accueil</a>
             <a href="../Artistes/artisteMain.html" class="lien">Nos artistes</a>
-             <a class="lien" href="../Mission/mission.html">Notre Mission</a>
+            <a class="lien" href="../Mission/mission.html">Notre Mission</a>
             <a href="../Tournees/tournee.html" class="lien">Tournées</a>
             <a href="../Contact/contact.html" class="lien">Nous contacter</a>
         </div>
@@ -44,10 +45,10 @@
 
     <!--------------------------------------- MAIN (CONTENU PRINCIPAL) ----------------------------------------------->
 
-    <main>
+    <main id="contenuPrincipal">
         <div class="constructeur-main">
 
-    <!--------------------------------------- PREMIER ARTISTE -------------------------------------------------------->
+            <!--------------------------------------- PREMIER ARTISTE -------------------------------------------------------->
             <article class="date">
                 <div class="div-image-artiste">
                     <img src="beatles.png" alt="image des beatles" class="image-artiste">
@@ -86,7 +87,7 @@
                     </div>
                 </div>
             </article>
-    <!--------------------------------------- DEUXIÈME ARTISTE -------------------------------------------------------->
+            <!--------------------------------------- DEUXIÈME ARTISTE -------------------------------------------------------->
             <article class="date">
                 <div class="div-image-artiste">
                     <a href="micheal.html">
@@ -127,131 +128,133 @@
                     </div>
                 </div>
             </article>
-    <!--------------------------------------- TROISIÈME ARTISTE -------------------------------------------------------->
-    <article class="date">
-        <div class="div-image-artiste">
-            <img src="eminem.jpg" alt="image d'Eminem" class="image-artiste">
-        </div>
-        <div class="div-nom-artiste-nombre-billets">
-            <div class="nom-artiste">
-                <p>EMINEM SE RAMÈNE AU COLLÈGE</p>
-            </div>
-            <div class="div-date-lieu-artiste">
-                <div class="lieu-artiste">
-                    <a href="https://www.cmaisonneuve.qc.ca">
-                        <span>
-                            <i class="fa-solid fa-location-dot"></i>
-                            Vivoir du collège
-                        </span>
-                    </a>
+            <!--------------------------------------- TROISIÈME ARTISTE -------------------------------------------------------->
+            <article class="date">
+                <div class="div-image-artiste">
+                    <img src="eminem.jpg" alt="image d'Eminem" class="image-artiste">
                 </div>
-                <div class="date-artiste">
-                    <a href="https://www.calendrier-365.fr/calendrier/2026/février.html">
-                        <span>
-                            <i class="fa-solid fa-calendar-days"></i>
-                            Le 25 février 2026 à 8H10
-                        </span>
-                    </a>
+                <div class="div-nom-artiste-nombre-billets">
+                    <div class="nom-artiste">
+                        <p>EMINEM SE RAMÈNE AU COLLÈGE</p>
+                    </div>
+                    <div class="div-date-lieu-artiste">
+                        <div class="lieu-artiste">
+                            <a href="https://www.cmaisonneuve.qc.ca">
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Vivoir du collège
+                                </span>
+                            </a>
+                        </div>
+                        <div class="date-artiste">
+                            <a href="https://www.calendrier-365.fr/calendrier/2026/février.html">
+                                <span>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    Le 25 février 2026 à 8H10
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="div-bouton-réserver">
-            <div>
-                <a class="bouton" href="https://www.ticketmaster.ca">
-                    <span>
-                        <i class="fa-solid fa-ticket"></i>
-                        Réserver
-                    </span>
-                </a>
-            </div>
-        </div>
-        </article>
-    <!--------------------------------------- QUATRIÈME ARTISTE -------------------------------------------------------->
-    <article class="date">
-        <div class="div-image-artiste">
-            <img src="50cent.jpg" alt="image de 50 cent" class="image-artiste">
-        </div>
-        <div class="div-nom-artiste-nombre-billets">
-            <div class="nom-artiste">
-                <p>50 CENT N'A PLUS UN SOUS</p>
-            </div>
-            <div class="div-date-lieu-artiste">
-                <div class="lieu-artiste">
-                    <a href="https://www.stm.info/fr/infos/reseaux/metro/joliette">
-                        <span>
-                            <i class="fa-solid fa-location-dot"></i>
-                            Métro Joliette
-                        </span>
-                    </a>
+                <div class="div-bouton-réserver">
+                    <div>
+                        <a class="bouton" href="https://www.ticketmaster.ca">
+                            <span>
+                                <i class="fa-solid fa-ticket"></i>
+                                Réserver
+                            </span>
+                        </a>
+                    </div>
                 </div>
-                <div class="date-artiste">
-                    <a href="https://www.calendrier-365.fr/calendrier/2026/avril.html">
-                        <span>
-                            <i class="fa-solid fa-calendar-days"></i>
-                            Le 25 avril 2026 à 18H
-                        </span>
-                    </a>
+            </article>
+            <!--------------------------------------- QUATRIÈME ARTISTE -------------------------------------------------------->
+            <article class="date">
+                <div class="div-image-artiste">
+                    <img src="50cent.jpg" alt="image de 50 cent" class="image-artiste">
                 </div>
-            </div>
-        </div>
-        <div class="div-bouton-réserver">
-            <div>
-                <a class="bouton" href="https://www.ticketmaster.ca">
-                    <span>
-                        <i class="fa-solid fa-ticket"></i>
-                        Réserver
-                    </span>
-                </a>
-            </div>
-        </div>
-        </article>                     
+                <div class="div-nom-artiste-nombre-billets">
+                    <div class="nom-artiste">
+                        <p>50 CENT N'A PLUS UN SOUS</p>
+                    </div>
+                    <div class="div-date-lieu-artiste">
+                        <div class="lieu-artiste">
+                            <a href="https://www.stm.info/fr/infos/reseaux/metro/joliette">
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Métro Joliette
+                                </span>
+                            </a>
+                        </div>
+                        <div class="date-artiste">
+                            <a href="https://www.calendrier-365.fr/calendrier/2026/avril.html">
+                                <span>
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    Le 25 avril 2026 à 18H
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-bouton-réserver">
+                    <div>
+                        <a class="bouton" href="https://www.ticketmaster.ca">
+                            <span>
+                                <i class="fa-solid fa-ticket"></i>
+                                Réserver
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </article>
         </div>
     </main>
-    <!------------------------------------------- FOOTER (PIED DE PAGE) ----------------------------------------------->
 
-<!-- fait avec Bulma -->
+    <!--------------------------------------- FOOTER ------------------------------------------------------------>
+    
+    <!-- fait avec Bulma -->
     <footer>
-    <div class="footer montserrat-1 texte-encadre"> <!-- montserrat-1 pour la police de caractère -->
-        <div class="columns "> <!-- columns pour créer des colonnes -->
-            <div class="column is-one-third has-text-left"> <!-- column pour chaque colonne, is-one-third pour une colonne qui prend un tiers de la largeur -->
-                <strong>La Place Des Or</strong>
-                <p class="mt-2">Plateforme dédiée aux artistes musicaux émergents et confirmés.</p> <!-- mt-2 pour une marge en haut -->
-            </div>
-            <div class="column has-text-left">
-                <strong>Navigation</strong>
-                <div class="mt-2"> <!-- mt-2 pour une marge en haut -->
-                    <a class="lien" href="../Accueil/index.html">Accueil</a><br>
-                    <a class="lien" href="../Artistes/artisteMain.html">Nos artistes</a><br>
-                     <a class="lien" href="../Mission/mission.html">Notre mission</a><br>
-                    <a class="lien" href="../Tournees/tournee.html">Tournées</a><br>
-                    <a class="lien" href="../Contact/contact.html">Nous contacter</a>
+        <div class="footer montserrat-1"> <!-- montserrat-1 pour la police de caractère -->
+            <div class="columns "> <!-- columns pour créer des colonnes -->
+                <div class="column is-one-third has-text-left"> <!-- column pour chaque colonne, is-one-third pour une colonne qui prend un tiers de la largeur -->
+                    <strong>La Place Des Or</strong>
+                    <p class="mt-2">Plateforme dédiée aux artistes musicaux émergents et confirmés.</p> <!-- mt-2 pour une marge en haut -->
+                </div>
+                <div class="column has-text-left"> <!-- column pour chaque colonne -->
+                    <strong>Navigation</strong>
+                    <div class="mt-2"> <!-- mt-2 pour une marge en haut -->
+                        <a class="lien" href="../Accueil/index.html">Accueil</a><br>
+                        <a class="lien" href="../Mission/mission.html">Mission</a><br>
+                        <a class="lien" href="../Artistes/artisteMain.html">Nos artistes</a><br>
+                        <a class="lien" href="../Tournees/tournee.html">Tournées</a><br>
+                        <a class="lien" href="../Contact/contact.html">Nous contacter</a>
+                    </div>
+                </div>
+                <div class="column has-text-left">
+                    <strong>Suivez-nous</strong>
+                    <!-- Liens vers les réseaux sociaux avec des icônes Font Awesome -->
+                    <div class="mt-2"> <!-- mt-2 pour une marge en haut -->
+                        <a class="lien" href="https://facebook.com" target="_blank">
+                            <i class="fab fa-facebook fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                        </a>
+                        <a class="lien" href="https://instagram.com" target="_blank">
+                            <i class="fab fa-instagram fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                        </a>
+                        <a class="lien" href="https://twitter.com" target="_blank">
+                            <i class="fab fa-twitter fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                        </a>
+                        <a class="lien" href="https://youtube.com" target="_blank">
+                            <i class="fab fa-youtube fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="column has-text-left">
-                <strong>Suivez-nous</strong>
-                <!-- Liens vers les réseaux sociaux avec des icônes Font Awesome -->
-                <div class="mt-2"> <!-- mt-2 pour une marge en haut -->
-                    <a class="lien" href="https://facebook.com" target="_blank">
-                        <i class="fab fa-facebook fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
-                    </a>
-                    <a class="lien" href="https://instagram.com" target="_blank">
-                        <i class="fab fa-instagram fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
-                    </a>
-                    <a class="lien" href="https://twitter.com" target="_blank">
-                        <i class="fab fa-twitter fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
-                    </a>
-                    <a class="lien" href="https://youtube.com" target="_blank">
-                        <i class="fab fa-youtube fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
-                    </a>
-                </div>
+            <!-- Ligne horizontale pour séparer le contenu du footer de la bannière-->
+            <hr class="my-4 montserrat-1" style="border-top: 0.5px solid grey; margin-bottom: 0; height: 0;"> <!-- my-4 pour une marge verticale (fait avec Bulma) -->
+            <div class="banner">
+                <p>&copy; 2025 La Place Des Or. Tous droits réservés.</p>
             </div>
-        </div>
-        <!-- Ligne horizontale pour séparer le contenu du footer de la bannière-->
-        <hr class="my-4 montserrat-1" style="border-top: 0.5px solid grey; margin-bottom: 0; height: 0;"> <!-- my-4 pour une marge verticale (fait avec Bulma) -->
-        <div class="banner">
-            <p>&copy; 2025 La Place Des Or. Tous droits réservés.</p>
-        </div>
-    </footer>
+        </footer>
+    
 </body>
 
 </html>
