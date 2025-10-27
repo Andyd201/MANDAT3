@@ -138,6 +138,23 @@ span:hover {
     color: rgba(139, 98, 33, 0.85);
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #004080;
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus{
+    top: 10px;
+}
+
 
 
 
