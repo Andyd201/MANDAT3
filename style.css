@@ -24,6 +24,10 @@ body {
     margin: 0; /* Supprime les marges par défaut */
 }
 
+span:hover {
+  color: rgba(139, 98, 33, 0.85);
+}
+
 /*=============================== BARRE NAVIGATION ==========================*/
 
 .navBar { /* Navigation principale */
