@@ -129,7 +129,6 @@ span:hover {
     margin-top: 7.5vmin; /* Espace au-dessus de la bannière */
 }
 
-<<<<<<< HEAD
 /* nom très peu significatif pour dire remplir l'épaisseur du texte*/
 .texte-encadre { /* Style du texte dans l'encadré */
     font-weight: 300; /* Poids de la police */
@@ -137,7 +136,6 @@ span:hover {
     
 }
 
-=======
 .lien-logo {
     text-decoration: none;
 }
@@ -146,7 +144,6 @@ span:hover {
     text-decoration: none;
     color: rgba(139, 98, 33, 0.85);
 }
->>>>>>> 06bc15bc4522496f9e3f30496541d7c946763412
 
 
 
