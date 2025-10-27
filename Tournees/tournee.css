@@ -37,8 +37,8 @@ span:hover {
     font-weight: 400;
     font-size: 1em;
     color: #030213;
-    padding: 2em;
-    margin-bottom: 1em;
+    padding: 2.5em;
+    margin-bottom: 2em;
 }
 
 
@@ -72,7 +72,6 @@ span:hover {
     flex-direction: column;
     align-items: center;
     gap: 2em;
-    padding: 1em;
     margin-right: 0;
 }
 
