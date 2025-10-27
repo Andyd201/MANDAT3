@@ -46,7 +46,7 @@ span:hover {
 }
 
 .navBar a:hover { /* Style au survol des liens */
-    text-decoration: underline; /* Ajoute un soulignement */
+ /* Ajoute un soulignement */
     transform: translateY(-4px);
     transition: transform 0.1s;
 }
@@ -129,7 +129,14 @@ span:hover {
     margin-top: 7.5vmin; /* Espace au-dessus de la bannière */
 }
 
+.lien-logo {
+    text-decoration: none;
+}
 
+.lien-logo:hover {
+    text-decoration: none;
+    color: rgba(139, 98, 33, 0.85);
+}
 
 
 
