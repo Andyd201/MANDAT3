@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" /> <!-- Google Fonts (icône de musique) -->
     <link rel="stylesheet" href="../style.css">
     <title> La Place Des Or - Artistes </title>
     <link rel="stylesheet" href="../Artistes/Artiste.css">
@@ -11,10 +14,14 @@
 
 <body>
     <nav>
-        <div class="navBar montserrat-nav-bar">
+        <div class="montserrat-nav-bar navBar montserrat-1">
+            <span class="agency_name icone-agency-container"> <!-- Conteneur pour l'icône et le nom de l'agence -->
+                <i class="material-symbols-outlined icone">music_note</i> <!-- Icône de musique -->
+                La Place Des Or
+            </span>
             <a href="../Accueil/index.html" class="lien">Accueil</a>
             <a href="../Artistes/artisteMain.html" class="lien">Nos artistes</a>
-            <a href="../Mission/mission.html" class="lien">Notre Mission</a>
+            <a class="lien" href="../Mission/mission.html">Notre mission</a>
             <a href="../Tournees/tournee.html" class="lien">Tournées</a>
             <a href="../Contact/contact.html" class="lien">Nous contacter</a>
         </div>
@@ -64,7 +71,7 @@
     </main>
 
     <footer>
-        <div class="footer montserrat-1"> <!-- montserrat-1 pour la police de caractère -->
+        <div class="footer montserrat-1 texte-encadre"> <!-- montserrat-1 pour la police de caractère -->
             <div class="columns "> <!-- columns pour créer des colonnes -->
                 <div class="column is-one-third has-text-left">
                     <!-- column pour chaque colonne, is-one-third pour une colonne qui prend un tiers de la largeur -->

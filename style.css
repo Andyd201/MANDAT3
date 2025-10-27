@@ -125,6 +125,12 @@ body {
     margin-top: 7.5vmin; /* Espace au-dessus de la bannière */
 }
 
+/* nom très peu significatif pour dire remplir l'épaisseur du texte*/
+.texte-encadre { /* Style du texte dans l'encadré */
+    font-weight: 300; /* Poids de la police */
+    font-style: normal; /* Style normal */
+    
+}
 
 
 
