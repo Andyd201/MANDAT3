@@ -2,12 +2,24 @@ body {
     background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("spectacle.jpg");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat;
 }
 
 p {
     font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: #030213;
+}
+
+span:hover {
+    color: rgba(139, 98, 33, 0.85);
 }
 
 .montserrat-header {
@@ -25,8 +37,8 @@ p {
     font-weight: 400;
     font-size: 1em;
     color: #030213;
-    padding: 7em;
-    margin-bottom: 1em;
+    padding: 2.5em;
+    margin-bottom: 2em;
 }
 
 
@@ -37,13 +49,21 @@ p {
     color: #030213;
     background-color: #D3D3D3;
     border: solid 0.5vmin #030213;
-    border-radius: 0.5vmin;
+    border-radius: 1vmin;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 80%;
-    height: 18vmin;
+    height: 22.5vmin;
     display: flex;
     flex-direction: row;
     padding: 0; 
     gap: 0;
+}
+
+.date:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -52,7 +72,6 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 2em;
-    padding: 1em;
     margin-right: 0;
 }
 
@@ -60,18 +79,57 @@ p {
     margin: 0;
 }
 
-.image-artiste {
-    background-color: red;
+.div-image-artiste {
     width: 20%;
+    overflow: hidden;
 }
 
-.nom-artiste-nombre-billets {
-    background-color: green;
-    width: 40%;
+.image-artiste {
+    width: 100%;
+    height: 100%;
+    border-right: solid 0.5vmin black;
+    object-fit: cover;
 }
 
-.bouton-réserver {
-    background-color: blue;
-    width: 40%;
+.div-nom-artiste-nombre-billets {
+    width: 60%;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
 }
 
+.nom-artiste {
+    width: 100%;
+    height: 40%;
+    font-size: 1.5em;
+    background-color: #857e7d;
+    border-bottom: solid 0.5vmin black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-date-lieu-artiste {
+    width: 100%;
+    height: 60%;
+    font-size: 1.2em;
+    background-color: #D3D3D3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.div-bouton-réserver {
+    width: 20%;
+    border-left: solid 0.5vmin black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bouton {
+    width: 100%;
+    height: 100%;
+}

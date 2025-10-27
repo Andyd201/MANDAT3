@@ -24,6 +24,10 @@ body {
     margin: 0; /* Supprime les marges par défaut */
 }
 
+span:hover {
+  color: rgba(139, 98, 33, 0.85);
+}
+
 /*=============================== BARRE NAVIGATION ==========================*/
 
 .navBar { /* Navigation principale */
@@ -42,7 +46,7 @@ body {
 }
 
 .navBar a:hover { /* Style au survol des liens */
-    text-decoration: underline; /* Ajoute un soulignement */
+ /* Ajoute un soulignement */
     transform: translateY(-4px);
     transition: transform 0.1s;
 }
@@ -125,6 +129,7 @@ body {
     margin-top: 7.5vmin; /* Espace au-dessus de la bannière */
 }
 
+<<<<<<< HEAD
 /* nom très peu significatif pour dire remplir l'épaisseur du texte*/
 .texte-encadre { /* Style du texte dans l'encadré */
     font-weight: 300; /* Poids de la police */
@@ -132,6 +137,16 @@ body {
     
 }
 
+=======
+.lien-logo {
+    text-decoration: none;
+}
+
+.lien-logo:hover {
+    text-decoration: none;
+    color: rgba(139, 98, 33, 0.85);
+}
+>>>>>>> 06bc15bc4522496f9e3f30496541d7c946763412
 
 
 
