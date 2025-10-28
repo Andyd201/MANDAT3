@@ -4,34 +4,42 @@ header { /* En-tête */
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../Mission/mission2.jpg'); /* Image de fond avec assombrissement */
     background-size: cover; /* Couvre toute la zone */
     background-position: center; /* Centre l'image */
-    min-height: 80vmin; /* Hauteur minimale */
+    min-height: 40em; /* Hauteur minimale */
 }
 
 .title { /* Titre principal */
     color: white; /* Couleur du texte */
     text-align: left; /* Centre le texte */
-    padding: 8vmin 2vmin; /* Espace intérieur */
+    padding: 2em 0em; /* Espace intérieur */
+    font-size: 2.5em; /* Taille de la police */
 }
 
 .description { /* Description sous le titre */
     color: white; /* Couleur du texte */
-    font-size: 3.7vmin; /* Taille de la police */
+    font-size: 1.5em; /* Taille de la police */
     line-height: 1.6; /* Hauteur de ligne */
-    margin-top: 0vmin; /* Espace au-dessus */
+    margin-top: 0em; /* Espace au-dessus */
 }
 
 /*======================= MAIN CONTENT =======================*/
 
-main li { /* Style des éléments de liste */
-    margin-bottom: 3vmin; /* Espace entre les éléments de la liste */
+main li strong{ /* Style des éléments de liste */
+    margin-bottom: 3em; /* Espace entre les éléments de la liste */
+    font-size: 1.3em; /* Taille de la police */
 }
 
 main p { /* Style des paragraphes */
-    margin-top: 1.5vmin; /* Espace entre les paragraphes */
+    margin-top: 1.5em; /* Espace entre les paragraphes */
+    margin-bottom: 1.5em; /* Espace entre les paragraphes */
+    font-size: 1.2em; /* Taille de la police */
 }
 
 .content { /* Style du conteneur de contenu */
-    padding-bottom: 3vmin; /* Espace intérieur en bas */
-    border-bottom: 0.1vmin solid #eee; /* Bordure en bas */
+    padding-bottom: 3em; /* Espace intérieur en bas */
+    border-bottom: 0.1em solid #eee; /* Bordure en bas */
+}
+
+h1.subtitle { /* Style des sous-titres */
+    font-size: 1.8em; /* Taille de la police */
 }
 
