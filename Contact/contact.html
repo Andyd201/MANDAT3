@@ -1,182 +1,216 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> <!-- Bulma CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" /> <!-- Google Fonts (icône de musique) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <!-- Google Fonts (icône de musique) -->
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../Contact/style_contact.css" />
-    
+
     <title>La Place Des Or - Contact</title>
 </head>
+
 <body>
 
     <a href="#contenuPrincipal" class="skip-link"> Passer au contenu principal </a>
-<!------------------------------------- NAVIGATION PRINCIPALE ----------------------------------------------->
+    <!------------------------------------- NAVIGATION PRINCIPALE ----------------------------------------------->
 
-<nav>
-    <div class="montserrat-nav-bar navBar montserrat-1">
-        <a class="agency_name icone-agency-container lien-logo"> <!-- Conteneur pour l'icône et le nom de l'agence -->
-            <i class="material-symbols-outlined icone">music_note</i> <!-- Icône de musique -->
-            La Place Des Or
-        </a>
-        <a href="../Accueil/index.html" class="lien">Accueil</a>
-        <a href="../Artistes/artisteMain.html" class="lien">Nos artistes</a>
-         <a class="lien" href="../Mission/mission.html">Notre Mission</a>
-        <a href="../Tournees/tournee.html" class="lien">Tournées</a>
-        <a href="../Contact/contact.html" class="lien">Nous contacter</a>
-    </div>
-</nav>
+    <nav>
+        <div class="montserrat-nav-bar navBar montserrat-1">
+            <a class="agency_name icone-agency-container lien-logo">
+                <!-- Conteneur pour l'icône et le nom de l'agence -->
+                <i class="material-symbols-outlined icone" aria-hidden="true">music_note</i> <!-- Icône de musique -->
+                La Place Des Or
+            </a>
+            <a href="../Accueil/index.html" class="lien">Accueil</a>
+            <a href="../Artistes/artisteMain.html" class="lien">Nos artistes</a>
+            <a class="lien" href="../Mission/mission.html">Notre Mission</a>
+            <a href="../Tournees/tournee.html" class="lien">Tournées</a>
+            <a href="../Contact/contact.html" class="lien">Nous contacter</a>
+        </div>
+    </nav>
 
 
-<!--------------------------------------- HEADER (EN-TÊTE) ----------------------------------------------->
+    <!--------------------------------------- HEADER (EN-TÊTE) ----------------------------------------------->
     <header> <!-- faite avec Bulma (Layout-hero) et Google Fonts -->
-    <div class="container has-text-centered montserrat-1" id="contenuPrincipal"> <!-- has-text-centered pour centrer le texte -->
-        <h1 class="title">Contactez-nous</h1>
-        <p class="subtitle">Une question, une demande de partenariat ou simplement envie d'échanger ? N'hésitez pas à nous contacter.</p>
-    </div>
+        <div class="container has-text-centered montserrat-1" id="contenuPrincipal">
+            <!-- has-text-centered pour centrer le texte -->
+            <h1 class="title">Contactez-nous</h1>
+            <p class="subtitle">Une question, une demande de partenariat ou simplement envie d'échanger ? N'hésitez pas
+                à nous contacter.</p>
+        </div>
     </header>
 
-<!-------------------------------------------- FORMULAIRE ----------------------------------------------->
+    <!-------------------------------------------- FORMULAIRE ----------------------------------------------->
 
-<!-- fait avec Bulma (form) -->
-    <main class="section columns montserrat-1"> <!-- section pour une section, is-two-thirds pour une largeur de deux tiers, is-centered pour centrer la section -->
-    <div class="container column is-two-thirds"> <!-- container pour centrer le contenu, is-two-thirds pour une largeur de deux tiers -->
-        <section class="box"> <!-- box pour encadrer le formulaire -->
-        <h2 class="title is-4">Formulaire</h2> <!-- is-4 pour une taille de titre moyenne -->
-        <form class="contact-form" action="#" method="post"> <!-- action="#" pour ne pas envoyer les données -->
-            <div class="columns"> <!-- columns pour créer des colonnes -->
-                <div class="column"> <!-- column pour chaque colonne -->
-                    <div class="field"> <!-- Champ pour le nom -->
-                        <label class="label" for="nom">Nom</label> <!-- label pour le nom -->
-                        <div class="control has-icons-left"> <!-- control pour le champ de saisie, has-icons-left pour ajouter une icône à gauche -->
-                            <input class="input" type="text" id="nom" name="nom" required> <!-- input pour le champ de saisie -->
-                            <span class="icon is-small is-left"> <!-- icon pour l'icône, is-small pour une petite icône, is-left pour une icône à gauche -->
-                                <i class="fas fa-user"></i> <!-- icône utilisateur -->
-                            </span> <!-- fin de l'icône -->
+    <!-- fait avec Bulma (form) -->
+    <main class="section columns montserrat-1">
+        <!-- section pour une section, is-two-thirds pour une largeur de deux tiers, is-centered pour centrer la section -->
+        <div class="container column is-two-thirds">
+            <!-- container pour centrer le contenu, is-two-thirds pour une largeur de deux tiers -->
+            <section class="box"> <!-- box pour encadrer le formulaire -->
+                <h2 class="title is-4">Formulaire</h2> <!-- is-4 pour une taille de titre moyenne -->
+                <form class="contact-form" action="#" method="post"> <!-- action="#" pour ne pas envoyer les données -->
+                    <div class="columns"> <!-- columns pour créer des colonnes -->
+                        <div class="column"> <!-- column pour chaque colonne -->
+                            <div class="field"> <!-- Champ pour le nom -->
+                                <label class="label" for="nom">Nom</label> <!-- label pour le nom -->
+                                <div class="control has-icons-left">
+                                    <!-- control pour le champ de saisie, has-icons-left pour ajouter une icône à gauche -->
+                                    <input class="input" type="text" id="nom" name="nom" required>
+                                    <!-- input pour le champ de saisie -->
+                                    <span class="icon is-small is-left">
+                                        <!-- icon pour l'icône, is-small pour une petite icône, is-left pour une icône à gauche -->
+                                        <i class="fas fa-user" aria-hidden="true"></i> <!-- icône utilisateur -->
+                                    </span> <!-- fin de l'icône -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column"> <!-- column pour chaque colonne -->
+                            <div class="field"> <!-- Champ pour l'email -->
+                                <label class="label" for="email">Email</label> <!-- label pour l'email -->
+                                <div class="control has-icons-left">
+                                    <!-- control pour le champ de saisie, has-icons-left pour ajouter une icône à gauche -->
+                                    <input class="input" type="email" id="email" name="email" required>
+                                    <!-- input pour le champ de saisie -->
+                                    <span class="icon is-small is-left">
+                                        <!-- icon pour l'icône, is-small pour une petite icône, is-left pour une icône à gauche -->
+                                        <i class="fas fa-envelope" aria-hidden="true"></i> <!-- icône enveloppe -->
+                                    </span> <!-- fin de l'icône -->
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="column"> <!-- column pour chaque colonne -->
-                    <div class="field"> <!-- Champ pour l'email -->
-                        <label class="label" for="email">Email</label> <!-- label pour l'email -->
-                        <div class="control has-icons-left"> <!-- control pour le champ de saisie, has-icons-left pour ajouter une icône à gauche -->
-                            <input class="input" type="email" id="email" name="email" required> <!-- input pour le champ de saisie -->
-                            <span class="icon is-small is-left"> <!-- icon pour l'icône, is-small pour une petite icône, is-left pour une icône à gauche -->
-                                <i class="fas fa-envelope"></i> <!-- icône enveloppe -->
-                            </span> <!-- fin de l'icône -->
+                    <div class="field"> <!-- field pour chaque champ du formulaire -->
+                        <label class="label" for="sujet">Sujet</label> <!-- label pour le sujet -->
+                        <div class="control"> <!-- control pour le champ de saisie -->
+                            <input class="input" type="text" id="sujet" name="sujet" required>
+                            <!-- input pour le champ de saisie -->
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="field"> <!-- field pour chaque champ du formulaire -->
-            <label class="label" for="sujet">Sujet</label> <!-- label pour le sujet -->
-            <div class="control"> <!-- control pour le champ de saisie -->
-                <input class="input" type="text" id="sujet" name="sujet" required> <!-- input pour le champ de saisie -->
-            </div>
-            </div>
-            <div class="field"> <!-- field pour chaque champ du formulaire -->
-            <label class="label" for="message">Message</label> <!-- label pour le message -->
-            <div class="control"> <!-- control pour le champ de saisie -->
-                <textarea class="textarea" id="message" name="message" rows="6" required></textarea> <!-- textarea pour le champ de saisie -->
-            </div>
-            </div>
-            <div class="field is-grouped is-justify-content-center"> <!-- field pour chaque champ du formulaire, is-grouped pour grouper les boutons, is-justify-content-center pour centrer les boutons -->
-            <div class="control"> <!-- control pour le bouton -->
-                <button type="submit" class="button" id="envoyer"> <!-- bouton pour soumettre le formulaire -->
-                <span class="icon"><i class="fas fa-paper-plane"></i></span> <!-- icône avion en papier -->
-                <span>Envoyer</span>
-                </button>
-            </div>
-            </div>
-        </form>
+                    <div class="field"> <!-- field pour chaque champ du formulaire -->
+                        <label class="label" for="message">Message</label> <!-- label pour le message -->
+                        <div class="control"> <!-- control pour le champ de saisie -->
+                            <textarea class="textarea" id="message" name="message" rows="6" required></textarea>
+                            <!-- textarea pour le champ de saisie -->
+                        </div>
+                    </div>
+                    <div class="field is-grouped is-justify-content-center">
+                        <!-- field pour chaque champ du formulaire, is-grouped pour grouper les boutons, is-justify-content-center pour centrer les boutons -->
+                        <div class="control"> <!-- control pour le bouton -->
+                            <button type="submit" class="button" id="envoyer">
+                                <!-- bouton pour soumettre le formulaire -->
+                                <span class="icon"><i class="fas fa-paper-plane" aria-hidden="true"></i></span>
+                                <!-- icône avion en papier -->
+                                <span>Envoyer</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <!---------------------------------------------- Encadré Informations --------------------------------------------->
+
+        <div class="container column is-one-third montserrat-1 texte-encadre">
+            <!-- container pour centrer le contenu, is-one-third pour une largeur d'un tiers -->
+            <section class="box"> <!-- box pour encadrer les informations -->
+                <h2 class="title is-4">Informations</h2> <!-- is-4 pour une taille de titre moyenne -->
+                <ul>
+                    <li><span class="icon is-small is-left"> <!-- icône pour l'adresse -->
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i> <!-- icône de localisation -->
+                        </span>
+                        <strong>Adresse</strong> <br>6415 R. Sherbrooke E, Montréal, QC H1N 1C5
+                    </li> <!-- adresse -->
+                    <li><span class="icon is-small is-left"> <!-- icône pour l'email -->
+                            <i class="fas fa-envelope" aria-hidden="true"></i> <!-- icône enveloppe -->
+                        </span>
+                        <strong>Email</strong> <br>info@laplacedesor.com
+                    </li> <!-- email -->
+                    <li><span class="icon is-small is-left"> <!-- icône pour le téléphone -->
+                            <i class="fas fa-phone" aria-hidden="true"></i> <!-- icône téléphone -->
+                        </span>
+                        <strong>Téléphone</strong> <br> (514) 252-1318
+                    </li> <!-- téléphone -->
+                </ul>
+            </section>
+            <br>
+            <!---------------------------------------------- Encadré Horaires --------------------------------------------->
+
+            <section class="box montserrat-1 texte-encadre"> <!-- box pour encadrer les horaires -->
+                <h2 class="title is-4">Horaires</h2> <!-- is-4 pour une taille de titre moyenne -->
+                <ul>
+                    <li>
+                        <span class="icon is-small is-left"> <!-- icône pour les horaires -->
+                            <i class="fas fa-clock" aria-hidden="true"></i> <!-- icône horloge -->
+                        </span>
+                        <strong>Horaires</strong> <br>Lundi au Vendredi: 9h - 18h <br>Samedi: 10h - 16h <br>Dimanche:
+                        Fermé
+                    </li> <!-- horaires -->
+                </ul>
+            </section>
+        </div>
         </section>
-    </div>
-    <!---------------------------------------------- Encadré Informations --------------------------------------------->
+        </div>
+    </main>
 
-    <div class="container column is-one-third montserrat-1 texte-encadre"> <!-- container pour centrer le contenu, is-one-third pour une largeur d'un tiers -->
-        <section class="box"> <!-- box pour encadrer les informations -->
-            <h2 class="title is-4">Informations</h2> <!-- is-4 pour une taille de titre moyenne -->
-            <ul>
-                <li><span class="icon is-small is-left"> <!-- icône pour l'adresse -->
-                    <i class="fas fa-map-marker-alt"></i> <!-- icône de localisation -->
-                    </span>
-                    <strong>Adresse</strong> <br>6415 R. Sherbrooke E, Montréal, QC H1N 1C5</li> <!-- adresse -->
-                <li><span class="icon is-small is-left"> <!-- icône pour l'email -->
-                    <i class="fas fa-envelope"></i> <!-- icône enveloppe -->
-                    </span>
-                    <strong>Email</strong> <br>info@laplacedesor.com</li> <!-- email -->
-                <li><span class="icon is-small is-left"> <!-- icône pour le téléphone -->
-                    <i class="fas fa-phone"></i> <!-- icône téléphone -->
-                    </span>
-                    <strong>Téléphone</strong> <br> (514) 252-1318</li> <!-- téléphone -->
-            </ul>
-        </section>
-        <br>
-        <!---------------------------------------------- Encadré Horaires --------------------------------------------->
+    <!------------------------------------------- FOOTER (PIED DE PAGE) ----------------------------------------------->
 
-        <section class="box montserrat-1 texte-encadre"> <!-- box pour encadrer les horaires -->
-            <h2 class="title is-4">Horaires</h2> <!-- is-4 pour une taille de titre moyenne -->
-            <ul>
-                <li>
-                    <span class="icon is-small is-left"> <!-- icône pour les horaires -->
-                        <i class="fas fa-clock"></i> <!-- icône horloge -->
-                    </span>
-                    <strong>Horaires</strong> <br>Lundi au Vendredi: 9h - 18h <br>Samedi: 10h - 16h <br>Dimanche: Fermé </li> <!-- horaires -->
-            </ul>
-        </section>
-    </div>
-    </section>
-</div>
-</main>
-
-<!------------------------------------------- FOOTER (PIED DE PAGE) ----------------------------------------------->
-
-<!-- fait avec Bulma -->
+    <!-- fait avec Bulma -->
     <footer>
-    <div class="footer montserrat-1 texte-encadre"> <!-- montserrat-1 pour la police de caractère -->
-        <div class="columns "> <!-- columns pour créer des colonnes -->
-            <div class="column is-one-third has-text-left"> <!-- column pour chaque colonne, is-one-third pour une colonne qui prend un tiers de la largeur -->
-                <strong>La Place Des Or</strong>
-                <p class="mt-2">Plateforme dédiée aux artistes musicaux émergents et confirmés.</p> <!-- mt-2 pour une marge en haut -->
-            </div>
-            <div class="column has-text-left">
-                <strong>Navigation</strong>
-                <div class="mt-2"> <!-- mt-2 pour une marge en haut -->
-                    <a class="lien" href="../Accueil/index.html">Accueil</a><br>
-                    <a class="lien" href="../Artistes/artisteMain.html">Nos artistes</a><br>
-                     <a class="lien" href="../Mission/mission.html">Notre mission</a><br>
-                    <a class="lien" href="../Tournees/tournee.html">Tournées</a><br>
-                    <a class="lien" href="../Contact/contact.html">Nous contacter</a>
+        <div class="footer montserrat-1 texte-encadre"> <!-- montserrat-1 pour la police de caractère -->
+            <div class="columns "> <!-- columns pour créer des colonnes -->
+                <div class="column is-one-third has-text-left">
+                    <!-- column pour chaque colonne, is-one-third pour une colonne qui prend un tiers de la largeur -->
+                    <strong>La Place Des Or</strong>
+                    <p class="mt-2">Plateforme dédiée aux artistes musicaux émergents et confirmés.</p>
+                    <!-- mt-2 pour une marge en haut -->
+                </div>
+                <div class="column has-text-left">
+                    <strong>Navigation</strong>
+                    <div class="mt-2"> <!-- mt-2 pour une marge en haut -->
+                        <a class="lien" href="../Accueil/index.html">Accueil</a><br>
+                        <a class="lien" href="../Artistes/artisteMain.html">Nos artistes</a><br>
+                        <a class="lien" href="../Mission/mission.html">Notre mission</a><br>
+                        <a class="lien" href="../Tournees/tournee.html">Tournées</a><br>
+                        <a class="lien" href="../Contact/contact.html">Nous contacter</a>
+                    </div>
+                </div>
+                <div class="column has-text-left">
+                    <strong>Suivez-nous</strong>
+                    <!-- Liens vers les réseaux sociaux avec des icônes Font Awesome -->
+                    <div class="mt-2"> <!-- mt-2 pour une marge en haut -->
+                        <a class="lien" href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook fa-2x" aria-hidden="true"></i>
+                            <!-- fa-2x pour une icône deux fois plus grande -->
+                        </a>
+                        <a class="lien" href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                            <!-- fa-2x pour une icône deux fois plus grande -->
+                        </a>
+                        <a class="lien" href="https://twitter.com" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                            <!-- fa-2x pour une icône deux fois plus grande -->
+                        </a>
+                        <a class="lien" href="https://youtube.com" target="_blank" aria-label="Youtube">
+                            <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
+                            <!-- fa-2x pour une icône deux fois plus grande -->
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="column has-text-left">
-                <strong>Suivez-nous</strong>
-                <!-- Liens vers les réseaux sociaux avec des icônes Font Awesome -->
-                <div class="mt-2"> <!-- mt-2 pour une marge en haut -->
-                    <a class="lien" href="https://facebook.com" target="_blank">
-                        <i class="fab fa-facebook fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
-                    </a>
-                    <a class="lien" href="https://instagram.com" target="_blank">
-                        <i class="fab fa-instagram fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
-                    </a>
-                    <a class="lien" href="https://twitter.com" target="_blank">
-                        <i class="fab fa-twitter fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
-                    </a>
-                    <a class="lien" href="https://youtube.com" target="_blank">
-                        <i class="fab fa-youtube fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
-                    </a>
-                </div>
+            <!-- Ligne horizontale pour séparer le contenu du footer de la bannière-->
+            <hr class="my-4 montserrat-1" style="border-top: 0.5px solid grey; margin-bottom: 0; height: 0;">
+            <!-- my-4 pour une marge verticale (fait avec Bulma) -->
+            <div class="banner">
+                <p>&copy; 2025 La Place Des Or. Tous droits réservés.</p>
             </div>
-        </div>
-        <!-- Ligne horizontale pour séparer le contenu du footer de la bannière-->
-        <hr class="my-4 montserrat-1" style="border-top: 0.5px solid grey; margin-bottom: 0; height: 0;"> <!-- my-4 pour une marge verticale (fait avec Bulma) -->
-        <div class="banner">
-            <p>&copy; 2025 La Place Des Or. Tous droits réservés.</p>
-        </div>
     </footer>
 
 </body>
 <script src="contact.js"></script>
+
 </html>

@@ -123,7 +123,7 @@ span:hover {
 
 .banner { /* Style de la bannière */
     background-color: #030213; /* Couleur de fond */
-    color: grey; /* Couleur du texte */
+    color: #808080; /* Couleur du texte */
     text-align: center; /* Centre le texte */
     padding-bottom: 4.5vmin; /* Espace intérieur */
     margin-top: 7.5vmin; /* Espace au-dessus de la bannière */

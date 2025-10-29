@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> <!-- Bulma CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <!-- Google Fonts (icône de musique) -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
@@ -23,7 +24,7 @@
         <div class="montserrat-nav-bar navBar montserrat-1">
             <a class="agency_name icone-agency-container lien-logo">
                 <!-- Conteneur pour l'icône et le nom de l'agence -->
-                <i class="material-symbols-outlined icone">music_note</i> <!-- Icône de musique -->
+                <i class="material-symbols-outlined icone" aria-hidden="true">music_note</i> <!-- Icône de musique -->
                 La Place Des Or
             </a>
             <a href="../Accueil/index.html" class="lien">Accueil</a>
@@ -42,9 +43,7 @@
                 <div class="artist-card">
                     <h2 class="Sous-titre">The Beatles</h2>
                     <p class="genre-musique">Rock And Roll </p>
-                    <img class="image"
-                        src="https://99scenes.b-cdn.net/wp-content/uploads/2016/07/the-beatles.jpg?x66900"
-                        alt="Artiste 1">
+                    <img class="image" src="images/the-beatles.jpg" alt="image des Beatles">
                     <a class="discographie-primary" href="../Artistes/Artiste1/artiste1.html">Voir la discographie</a>
                     <a class="discographie-secondary" href="../Tournees/tournee.html">Concert a venir</a>
                     <a class="btn-details" href="#">details</a>
@@ -53,9 +52,8 @@
                 <div class="artist-card">
                     <h2 class="Sous-titre">Michael Jackson</h2>
                     <p class="genre-musique">Pop</p>
-                    <img class="image"
-                        src="https://cdn-blog.superprof.com/blog_fr/wp-content/uploads/2022/08/michael-jackson-musique.jpg"
-                        alt="Artiste 2">
+                    <img class="image" src="images/michael-jackson.jpg"
+                        alt="Cover de l'album Thriller de Michael Jackson">
                     <a class="discographie-primary" href="../Artistes/Artiste2/artiste2.html">Voir la discographie</a>
                     <a class="discographie-secondary" href="../Tournees/tournee.html">Concert a venir</a>
                     <a class="btn-details" href="#">details</a>
@@ -64,9 +62,7 @@
                 <div class="artist-card">
                     <h2 class="Sous-titre">Eminem</h2>
                     <p class="genre-musique">Hip Hop</p>
-                    <img class="image"
-                        src="https://www.booska-p.com/wp-content/uploads/2017/11/eminem-sacre-meilleur-artiste-hip-hop-aux-mtv-europe-music-awards-649.jpg"
-                        alt="Artiste 3">
+                    <img class="image" src="images/eminem.jpg" alt="Image d'Eminem sur scène">
                     <a class="discographie-primary" href="../Artistes/Artiste3/artiste3.html">Voir la discographie</a>
                     <a class="discographie-secondary" href="../Tournees/tournee.html">Concert a venir</a>
                     <a class="btn-details" href="#">details</a>
@@ -75,9 +71,7 @@
                 <div class="artist-card">
                     <h2 class="Sous-titre">50 cent</h2>
                     <p class="genre-musique">Rap</p>
-                    <img class="image"
-                        src="https://i.guim.co.uk/img/media/d0866277e595c20a68b3565825ceefe508d8eb8d/0_740_4000_2400/master/4000.jpg?width=1200&quality=85&auto=format&fit=max&s=23ddd93524551c1e8116feaa1f20136a"
-                        alt="Artiste 4">
+                    <img class="image" src="images/50cent.jpg" alt="Image de 50 cent">
                     <a class="discographie-primary" href="../Artistes/Artiste4/artiste4.html">Voir la discographie</a>
                     <a class="discographie-secondary" href="../Tournees/tournee.html">Concert a venir</a>
                     <a class="btn-details" href="#">details</a>
@@ -109,17 +103,21 @@
                     <strong>Suivez-nous</strong>
                     <!-- Liens vers les réseaux sociaux avec des icônes Font Awesome -->
                     <div class="mt-2"> <!-- mt-2 pour une marge en haut -->
-                        <a class="lien" href="https://facebook.com" target="_blank">
-                            <i class="fab fa-facebook fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                        <a class="lien" href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook fa-2x" aria-hidden="true"></i>
+                            <!-- fa-2x pour une icône deux fois plus grande -->
                         </a>
-                        <a class="lien" href="https://instagram.com" target="_blank">
-                            <i class="fab fa-instagram fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                        <a class="lien" href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                            <!-- fa-2x pour une icône deux fois plus grande -->
                         </a>
-                        <a class="lien" href="https://twitter.com" target="_blank">
-                            <i class="fab fa-twitter fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                        <a class="lien" href="https://twitter.com" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                            <!-- fa-2x pour une icône deux fois plus grande -->
                         </a>
-                        <a class="lien" href="https://youtube.com" target="_blank">
-                            <i class="fab fa-youtube fa-2x"></i> <!-- fa-2x pour une icône deux fois plus grande -->
+                        <a class="lien" href="https://youtube.com" target="_blank" aria-label="Youtube">
+                            <i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
+                            <!-- fa-2x pour une icône deux fois plus grande -->
                         </a>
                     </div>
                 </div>
